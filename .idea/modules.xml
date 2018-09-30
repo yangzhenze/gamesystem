@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/gamesystem.iml" filepath="$PROJECT_DIR$/.idea/gamesystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/system-game/system-game.iml" filepath="$PROJECT_DIR$/system-game/system-game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/system_admin/system_admin.iml" filepath="$PROJECT_DIR$/system_admin/system_admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/system_game/system_game.iml" filepath="$PROJECT_DIR$/system_game/system_game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/system_provide/system_provide.iml" filepath="$PROJECT_DIR$/system_provide/system_provide.iml" />
+    </modules>
+  </component>
+</project>
