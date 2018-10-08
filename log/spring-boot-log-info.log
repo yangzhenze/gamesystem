@@ -6755,3 +6755,874 @@
 2018-09-30 15:26:10.356 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:99  - Tomcat started on port(s): 9012 (http) with context path ''
 2018-09-30 15:26:10.357 INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration Line:99  - Updating port to 9012
 2018-09-30 15:26:10.360 INFO  com.system.SystemAdminApplication Line:99  - Started SystemAdminApplication in 10.802 seconds (JVM running for 11.618)
+2018-09-30 17:25:29.038 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2d6764b2: startup date [Sun Sep 30 17:25:29 CST 2018]; root of context hierarchy
+2018-09-30 17:25:29.257 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-30 17:25:29.293 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9431c60d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:29.572 INFO  com.provide.SystemProvideApplication Line:662 - No active profile set, falling back to default profiles: default
+2018-09-30 17:25:29.587 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:590 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68105edc: startup date [Sun Sep 30 17:25:29 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2d6764b2
+2018-09-30 17:25:30.469 INFO  org.springframework.cloud.context.scope.GenericScope Line:294 - BeanFactory id=6faaf8be-8dbe-3d29-be1b-343698d5fe8e
+2018-09-30 17:25:30.487 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-30 17:25:30.596 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9431c60d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:30.963 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:91  - Tomcat initialized with port(s): 9011 (http)
+2018-09-30 17:25:30.985 INFO  org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+2018-09-30 17:25:30.985 INFO  org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-30 17:25:30.990 INFO  org.apache.catalina.core.AprLifecycleListener Line:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\apache-maven-3.5.4\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\GitHubDesktop\bin;C:\Users\Administrator\AppData\Roaming\npm;.]
+2018-09-30 17:25:31.113 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+2018-09-30 17:25:31.113 INFO  org.springframework.web.context.ContextLoader Line:285 - Root WebApplicationContext: initialization completed in 1527 ms
+2018-09-30 17:25:31.371 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-09-30 17:25:31.382 INFO  com.netflix.config.DynamicPropertyFactory Line:281 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3849ee4f
+2018-09-30 17:25:32.359 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-30 17:25:32.360 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-09-30 17:25:32.361 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-30 17:25:32.361 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-30 17:25:32.362 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-30 17:25:32.362 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:245 - Mapping filter: 'httpTraceFilter' to: [/*]
+2018-09-30 17:25:32.363 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'servletContainer' to urls: [/eureka/*]
+2018-09-30 17:25:32.363 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:187 - Servlet dispatcherServlet mapped to [/]
+2018-09-30 17:25:32.450 INFO  com.sun.jersey.server.impl.application.WebApplicationImpl Line:815 - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2018-09-30 17:25:32.524 INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider Line:70  - Using JSON encoding codec LegacyJacksonJson
+2018-09-30 17:25:32.526 INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider Line:71  - Using JSON decoding codec LegacyJacksonJson
+2018-09-30 17:25:32.650 INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider Line:80  - Using XML encoding codec XStreamXml
+2018-09-30 17:25:32.650 INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider Line:81  - Using XML decoding codec XStreamXml
+2018-09-30 17:25:32.996 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-09-30 17:25:33.087 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 17:25:33.298 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:574 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68105edc: startup date [Sun Sep 30 17:25:29 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2d6764b2
+2018-09-30 17:25:33.362 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-30 17:25:33.364 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-30 17:25:33.369 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.status(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-30 17:25:33.370 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:547 - Mapped "{[/lastn],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.lastn(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2018-09-30 17:25:33.399 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 17:25:33.400 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 17:25:33.871 INFO  org.springframework.ui.freemarker.SpringTemplateLoader Line:62  - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@68105edc: startup date [Sun Sep 30 17:25:29 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2d6764b2] and template loader path [classpath:/templates/]
+2018-09-30 17:25:33.872 INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer Line:131 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-09-30 17:25:34.075 INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory Line:71  - Setting initial instance status as: STARTING
+2018-09-30 17:25:34.113 INFO  com.netflix.discovery.DiscoveryClient Line:349 - Initializing Eureka in region us-east-1
+2018-09-30 17:25:34.114 INFO  com.netflix.discovery.DiscoveryClient Line:352 - Client configured to neither register nor query for data.
+2018-09-30 17:25:34.121 INFO  com.netflix.discovery.DiscoveryClient Line:365 - Discovery Client initialized at timestamp 1538299534119 with initial instances count: 0
+2018-09-30 17:25:34.170 INFO  com.netflix.eureka.DefaultEurekaServerContext Line:63  - Initializing ...
+2018-09-30 17:25:34.190 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:151 - Finished initializing remote region registries. All known remote regions: []
+2018-09-30 17:25:34.191 INFO  com.netflix.eureka.DefaultEurekaServerContext Line:70  - Initialized
+2018-09-30 17:25:34.211 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Line:59  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-09-30 17:25:34.225 INFO  org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping Line:547 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-09-30 17:25:34.226 INFO  org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping Line:547 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-09-30 17:25:34.227 INFO  org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping Line:547 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-30 17:25:34.285 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:433 - Registering beans for JMX exposure on startup
+2018-09-30 17:25:34.295 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:895 - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-09-30 17:25:34.298 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:895 - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-09-30 17:25:34.298 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:895 - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-09-30 17:25:34.302 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:675 - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-09-30 17:25:34.312 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:675 - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-09-30 17:25:34.324 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:675 - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=68105edc,type=ConfigurationPropertiesRebinder]
+2018-09-30 17:25:34.336 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:351 - Starting beans in phase 0
+2018-09-30 17:25:34.342 INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Line:42  - Registering application systemProvide with eureka with status UP
+2018-09-30 17:25:34.347 INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap Line:109 - Setting the eureka configuration..
+2018-09-30 17:25:34.347 INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap Line:114 - Eureka data center value eureka.datacenter is not set, defaulting to default
+2018-09-30 17:25:34.348 INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap Line:128 - Eureka environment value eureka.environment is not set, defaulting to test
+2018-09-30 17:25:34.369 INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap Line:184 - isAws returned false
+2018-09-30 17:25:34.370 INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap Line:152 - Initialized server context
+2018-09-30 17:25:34.370 INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl Line:242 - Got 1 instances from neighboring DS node
+2018-09-30 17:25:34.370 INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl Line:243 - Renew threshold is: 1
+2018-09-30 17:25:34.370 INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl Line:254 - Changing status to UP
+2018-09-30 17:25:34.378 INFO  org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration Line:72  - Started Eureka Server
+2018-09-30 17:25:34.397 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:206 - Tomcat started on port(s): 9011 (http) with context path ''
+2018-09-30 17:25:34.399 INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration Line:124 - Updating port to 9011
+2018-09-30 17:25:34.401 INFO  com.provide.SystemProvideApplication Line:59  - Started SystemProvideApplication in 5.913 seconds (JVM running for 7.322)
+2018-09-30 17:25:34.649 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-30 17:25:34.649 INFO  org.springframework.web.servlet.DispatcherServlet Line:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-30 17:25:34.668 INFO  org.springframework.web.servlet.DispatcherServlet Line:509 - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-09-30 17:25:41.583 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:99  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@26bab2f1: startup date [Sun Sep 30 17:25:41 CST 2018]; root of context hierarchy
+2018-09-30 17:25:41.801 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:99  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-30 17:25:41.837 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$800b4a6b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:42.101 INFO  com.system.SystemAdminApplication Line:99  - No active profile set, falling back to default profiles: default
+2018-09-30 17:25:42.116 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:99  - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4dd94a58: startup date [Sun Sep 30 17:25:42 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@26bab2f1
+2018-09-30 17:25:43.108 INFO  org.springframework.cloud.context.scope.GenericScope Line:99  - BeanFactory id=9422bfa9-6fc4-36f4-9eca-6a97b377a4a6
+2018-09-30 17:25:43.126 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:99  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-30 17:25:43.387 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$63f1476e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:43.446 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$800b4a6b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:44.031 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:99  - Tomcat initialized with port(s): 9012 (http)
+2018-09-30 17:25:44.055 INFO  org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+2018-09-30 17:25:44.056 INFO  org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-30 17:25:44.061 INFO  org.apache.catalina.core.AprLifecycleListener Line:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\apache-maven-3.5.4\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\GitHubDesktop\bin;C:\Users\Administrator\AppData\Roaming\npm;.]
+2018-09-30 17:25:44.188 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+2018-09-30 17:25:44.188 INFO  org.springframework.web.context.ContextLoader Line:99  - Root WebApplicationContext: initialization completed in 2073 ms
+2018-09-30 17:25:44.481 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:99  - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-30 17:25:44.482 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:99  - Mapping filter: 'tracingFilter' to: [/*]
+2018-09-30 17:25:44.482 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:99  - Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2018-09-30 17:25:44.483 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:99  - Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-30 17:25:44.483 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:99  - Servlet dispatcherServlet mapped to [/]
+2018-09-30 17:25:44.484 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:99  - Servlet statViewServlet mapped to [/druid/*]
+2018-09-30 17:25:44.541 INFO  com.system.dao.BaseDao Line:56  - Dao实现类是：com.system.bean.Admin
+2018-09-30 17:25:44.542 INFO  com.system.dao.BaseDao Line:60  - 表名是：sys_admin
+2018-09-30 17:25:44.544 INFO  com.system.dao.BaseDao Line:63  - 主键字段是：id
+2018-09-30 17:25:44.556 INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Line:56  - Init DruidDataSource
+2018-09-30 17:25:47.823 INFO  com.alibaba.druid.pool.DruidDataSource Line:930 - {dataSource-1} inited
+2018-09-30 17:25:47.936 INFO  com.system.dao.BaseDao Line:56  - Dao实现类是：com.system.bean.Dictionary
+2018-09-30 17:25:47.936 INFO  com.system.dao.BaseDao Line:60  - 表名是：sys_dictionary
+2018-09-30 17:25:47.937 INFO  com.system.dao.BaseDao Line:63  - 主键字段是：id
+2018-09-30 17:25:47.968 INFO  com.system.dao.BaseDao Line:56  - Dao实现类是：com.system.bean.Permission
+2018-09-30 17:25:47.968 INFO  com.system.dao.BaseDao Line:60  - 表名是：sys_permission
+2018-09-30 17:25:47.969 INFO  com.system.dao.BaseDao Line:63  - 主键字段是：id
+2018-09-30 17:25:47.992 INFO  com.system.dao.BaseDao Line:56  - Dao实现类是：com.system.bean.Role
+2018-09-30 17:25:47.992 INFO  com.system.dao.BaseDao Line:60  - 表名是：sys_role
+2018-09-30 17:25:47.992 INFO  com.system.dao.BaseDao Line:63  - 主键字段是：id
+2018-09-30 17:25:48.013 INFO  com.system.dao.BaseDao Line:56  - Dao实现类是：com.system.bean.RolePer
+2018-09-30 17:25:48.013 INFO  com.system.dao.BaseDao Line:60  - 表名是：sys_role_per
+2018-09-30 17:25:48.013 INFO  com.system.dao.BaseDao Line:63  - 主键字段是：null
+2018-09-30 17:25:48.485 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/admin],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.AdminController.update(com.system.bean.Admin)
+2018-09-30 17:25:48.486 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/admin/login],methods=[POST]}" onto public com.system.bean.Admin com.system.controller.AdminController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-09-30 17:25:48.487 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/admin],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.AdminController.addAdmin(com.system.bean.Admin,javax.servlet.http.HttpServletRequest)
+2018-09-30 17:25:48.488 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/admin/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.AdminController.getAdminById(java.lang.Integer)
+2018-09-30 17:25:48.488 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/admin/page/{page}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.AdminController.getAdminPage(java.lang.Integer,java.lang.Integer)
+2018-09-30 17:25:48.489 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/admin/checkAccount],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.AdminController.checkAccount(java.lang.String,java.lang.Integer)
+2018-09-30 17:25:48.489 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/admin/{id}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.AdminController.delAdmin(java.lang.Integer[])
+2018-09-30 17:25:48.491 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/dic],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DictionaryController.add(com.system.bean.Dictionary)
+2018-09-30 17:25:48.492 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/dic],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DictionaryController.update(com.system.bean.Dictionary)
+2018-09-30 17:25:48.493 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/dic],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DictionaryController.delete(java.lang.Integer[])
+2018-09-30 17:25:48.494 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/dic/check/value],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DictionaryController.checkValue(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-09-30 17:25:48.494 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/dic/page/{page}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DictionaryController.getPage(java.lang.Integer,java.lang.Integer)
+2018-09-30 17:25:48.495 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/dic/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DictionaryController.getDictionary(java.lang.Integer)
+2018-09-30 17:25:48.496 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/dic/check/code],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DictionaryController.checkCode(java.lang.String,java.lang.Integer)
+2018-09-30 17:25:48.501 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/per/checkPath],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.PermissionController.checkPath(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-09-30 17:25:48.501 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/per],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.PermissionController.addPermission(com.system.bean.Permission)
+2018-09-30 17:25:48.502 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/per/list],methods=[POST]}" onto public java.util.List<com.system.bean.Permission> com.system.controller.PermissionController.getRoleFunction(int)
+2018-09-30 17:25:48.502 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/per],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.PermissionController.updatePermission(com.system.bean.Permission)
+2018-09-30 17:25:48.503 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/per/{id}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.PermissionController.deletePermission(java.lang.Integer)
+2018-09-30 17:25:48.503 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/per],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.PermissionController.getTreeList()
+2018-09-30 17:25:48.504 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/per/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.PermissionController.getPermissionById(java.lang.Integer)
+2018-09-30 17:25:48.506 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.getRole(java.lang.Integer)
+2018-09-30 17:25:48.506 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.addRole(com.system.bean.Role)
+2018-09-30 17:25:48.507 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role/page/{page}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.getPage(java.lang.Integer,java.lang.Integer)
+2018-09-30 17:25:48.507 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role/per/list/{role}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.getTreeList(java.lang.Integer)
+2018-09-30 17:25:48.508 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.updateRole(com.system.bean.Role)
+2018-09-30 17:25:48.508 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.getList()
+2018-09-30 17:25:48.509 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role/{ids}],methods=[DELETE]}" onto public java.lang.String com.system.controller.RoleController.deleteRole(java.lang.Integer[])
+2018-09-30 17:25:48.511 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role/per/{role}],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.addRolePer(java.lang.Integer,java.lang.String)
+2018-09-30 17:25:48.513 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role/per/{role}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.getRolePer(java.lang.Integer)
+2018-09-30 17:25:48.514 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-09-30 17:25:48.518 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-30 17:25:48.519 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-30 17:25:48.520 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-30 17:25:48.522 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-30 17:25:48.523 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-30 17:25:48.774 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:99  - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 17:25:48.774 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:99  - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 17:25:48.775 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:99  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 17:25:48.852 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:99  - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4dd94a58: startup date [Sun Sep 30 17:25:42 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@26bab2f1
+2018-09-30 17:25:48.969 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-09-30 17:25:48.976 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-09-30 17:25:50.704 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Registering beans for JMX exposure on startup
+2018-09-30 17:25:50.706 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Bean with name 'statFilter' has been autodetected for JMX exposure
+2018-09-30 17:25:50.706 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-09-30 17:25:50.716 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-09-30 17:25:50.717 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-09-30 17:25:50.717 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-09-30 17:25:50.721 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-09-30 17:25:50.734 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-09-30 17:25:50.747 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=4dd94a58,type=ConfigurationPropertiesRebinder]
+2018-09-30 17:25:50.754 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2018-09-30 17:25:50.755 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2018-09-30 17:25:50.762 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:99  - Starting beans in phase 0
+2018-09-30 17:25:50.780 INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory Line:99  - Setting initial instance status as: STARTING
+2018-09-30 17:25:50.822 INFO  com.netflix.discovery.DiscoveryClient Line:349 - Initializing Eureka in region us-east-1
+2018-09-30 17:25:51.217 INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider Line:70  - Using JSON encoding codec LegacyJacksonJson
+2018-09-30 17:25:51.217 INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider Line:71  - Using JSON decoding codec LegacyJacksonJson
+2018-09-30 17:25:51.373 INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider Line:80  - Using XML encoding codec XStreamXml
+2018-09-30 17:25:51.374 INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider Line:81  - Using XML decoding codec XStreamXml
+2018-09-30 17:25:51.652 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 17:25:51.726 INFO  com.netflix.discovery.DiscoveryClient Line:958 - Disable delta property : false
+2018-09-30 17:25:51.727 INFO  com.netflix.discovery.DiscoveryClient Line:959 - Single vip registry refresh property : null
+2018-09-30 17:25:51.727 INFO  com.netflix.discovery.DiscoveryClient Line:960 - Force full registry fetch : false
+2018-09-30 17:25:51.728 INFO  com.netflix.discovery.DiscoveryClient Line:961 - Application is null : false
+2018-09-30 17:25:51.728 INFO  com.netflix.discovery.DiscoveryClient Line:962 - Registered Applications size is zero : true
+2018-09-30 17:25:51.728 INFO  com.netflix.discovery.DiscoveryClient Line:964 - Application version is -1: true
+2018-09-30 17:25:51.728 INFO  com.netflix.discovery.DiscoveryClient Line:1047 - Getting all instance registry info from the eureka server
+2018-09-30 17:25:51.983 INFO  com.netflix.discovery.DiscoveryClient Line:1056 - The response status is 200
+2018-09-30 17:25:51.985 INFO  com.netflix.discovery.DiscoveryClient Line:1264 - Starting heartbeat executor: renew interval is: 30
+2018-09-30 17:25:51.988 INFO  com.netflix.discovery.InstanceInfoReplicator Line:60  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-09-30 17:25:51.993 INFO  com.netflix.discovery.DiscoveryClient Line:449 - Discovery Client initialized at timestamp 1538299551992 with initial instances count: 0
+2018-09-30 17:25:52.004 INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Line:99  - Registering application systemAdmin with eureka with status UP
+2018-09-30 17:25:52.005 INFO  com.netflix.discovery.DiscoveryClient Line:1299 - Saw local status change event StatusChangeEvent [timestamp=1538299552005, current=UP, previous=STARTING]
+2018-09-30 17:25:52.009 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:99  - Starting beans in phase 2147483647
+2018-09-30 17:25:52.010 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:120 - Context refreshed
+2018-09-30 17:25:52.028 INFO  com.netflix.discovery.DiscoveryClient Line:826 - DiscoveryClient_SYSTEMADMIN/192.168.0.57:systemAdmin:9012: registering service...
+2018-09-30 17:25:52.032 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:123 - Found 1 custom documentation plugin(s)
+2018-09-30 17:25:52.109 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2018-09-30 17:25:52.125 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:269 - Registered instance SYSTEMADMIN/192.168.0.57:systemAdmin:9012 with status UP (replication=false)
+2018-09-30 17:25:52.127 INFO  com.netflix.discovery.DiscoveryClient Line:835 - DiscoveryClient_SYSTEMADMIN/192.168.0.57:systemAdmin:9012 - registration status: 204
+2018-09-30 17:25:52.615 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: updateUsingPUT_1
+2018-09-30 17:25:52.950 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: getPageUsingGET_1
+2018-09-30 17:25:52.962 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: getTreeListUsingGET_1
+2018-09-30 17:25:53.033 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:99  - Tomcat started on port(s): 9012 (http) with context path ''
+2018-09-30 17:25:53.034 INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration Line:99  - Updating port to 9012
+2018-09-30 17:25:53.145 INFO  com.system.SystemAdminApplication Line:99  - Started SystemAdminApplication in 12.643 seconds (JVM running for 13.421)
+2018-09-30 17:25:53.601 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:99  - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@62e20a76: startup date [Sun Sep 30 17:25:53 CST 2018]; root of context hierarchy
+2018-09-30 17:25:53.801 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:99  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-30 17:25:53.841 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$db614e2d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:54.099 INFO  com.system.SystemGameApplication Line:99  - The following profiles are active: dev
+2018-09-30 17:25:54.116 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:99  - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1500e009: startup date [Sun Sep 30 17:25:54 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@62e20a76
+2018-09-30 17:25:54.675 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory Line:99  - Overriding alias 'systemAdminFeignClient' definition for registered name 'com.system.service.AdminService' with new target name 'com.system.service.DictionaryService'
+2018-09-30 17:25:54.676 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory Line:99  - Overriding alias 'systemAdminFeignClient' definition for registered name 'com.system.service.DictionaryService' with new target name 'com.system.service.PermissionService'
+2018-09-30 17:25:54.677 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory Line:99  - Overriding alias 'systemAdminFeignClient' definition for registered name 'com.system.service.PermissionService' with new target name 'com.system.service.RoleService'
+2018-09-30 17:25:55.000 INFO  org.springframework.cloud.context.scope.GenericScope Line:99  - BeanFactory id=1c8a7e1d-f491-38c4-a754-c0e94229c682
+2018-09-30 17:25:55.019 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:99  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-30 17:25:55.122 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'shiroConfig' of type [com.system.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$a3dd6cd1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.472 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'default.com.system.SystemGameApplication.FeignClientSpecification' of type [org.springframework.cloud.openfeign.FeignClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.477 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'systemAdmin.FeignClientSpecification' of type [org.springframework.cloud.openfeign.FeignClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.481 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'org.springframework.cloud.openfeign.FeignAutoConfiguration' of type [org.springframework.cloud.openfeign.FeignAutoConfiguration$$EnhancerBySpringCGLIB$$c78aefb2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.491 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'feignContext' of type [org.springframework.cloud.openfeign.FeignContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.496 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:99  - Refreshing FeignContext-systemAdmin: startup date [Sun Sep 30 17:25:55 CST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1500e009
+2018-09-30 17:25:55.520 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:99  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-30 17:25:55.625 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'org.springframework.boot.context.properties.ConversionServiceDeducer$Factory' of type [org.springframework.boot.context.properties.ConversionServiceDeducer$Factory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.628 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'feign.client-org.springframework.cloud.openfeign.FeignClientProperties' of type [org.springframework.cloud.openfeign.FeignClientProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.639 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'org.springframework.cloud.openfeign.ribbon.FeignRibbonClientAutoConfiguration' of type [org.springframework.cloud.openfeign.ribbon.FeignRibbonClientAutoConfiguration$$EnhancerBySpringCGLIB$$5c98323b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.645 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'feignRequestOptions' of type [feign.Request$Options] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.654 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'org.springframework.cloud.openfeign.ribbon.DefaultFeignLoadBalancedConfiguration' of type [org.springframework.cloud.openfeign.ribbon.DefaultFeignLoadBalancedConfiguration$$EnhancerBySpringCGLIB$$8eb747fc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.668 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'default.org.springframework.cloud.netflix.ribbon.RibbonAutoConfiguration.RibbonClientSpecification' of type [org.springframework.cloud.netflix.ribbon.RibbonClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.672 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'default.org.springframework.cloud.netflix.ribbon.eureka.RibbonEurekaAutoConfiguration.RibbonClientSpecification' of type [org.springframework.cloud.netflix.ribbon.RibbonClientSpecification] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.677 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'ribbon.eager-load-org.springframework.cloud.netflix.ribbon.RibbonEagerLoadProperties' of type [org.springframework.cloud.netflix.ribbon.RibbonEagerLoadProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.679 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'org.springframework.cloud.netflix.ribbon.RibbonAutoConfiguration' of type [org.springframework.cloud.netflix.ribbon.RibbonAutoConfiguration$$EnhancerBySpringCGLIB$$bc93ab0a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.695 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'springClientFactory' of type [org.springframework.cloud.netflix.ribbon.SpringClientFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.709 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'cachingLBClientFactory' of type [org.springframework.cloud.openfeign.ribbon.CachingSpringLoadBalancerFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.717 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'feignClient' of type [org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.727 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'org.springframework.cloud.openfeign.FeignAutoConfiguration$HystrixFeignTargeterConfiguration' of type [org.springframework.cloud.openfeign.FeignAutoConfiguration$HystrixFeignTargeterConfiguration$$EnhancerBySpringCGLIB$$1149f24] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.736 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'feignTargeter' of type [org.springframework.cloud.openfeign.HystrixTargeter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.747 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'adminServiceHystrix' of type [com.system.service.hystrix.AdminServiceHystrix] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.808 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'com.system.service.AdminService' of type [com.sun.proxy.$Proxy108] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.835 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'permissionServiceHystrix' of type [com.system.service.hystrix.PermissionServiceHystrix] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.857 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'com.system.service.PermissionService' of type [com.sun.proxy.$Proxy110] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.861 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'shiroRealm' of type [com.system.config.shiro.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.896 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.956 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:55.985 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:99  - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$db614e2d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 17:25:56.456 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:99  - Tomcat initialized with port(s): 8013 (http)
+2018-09-30 17:25:56.478 INFO  org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+2018-09-30 17:25:56.478 INFO  org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.32
+2018-09-30 17:25:56.483 INFO  org.apache.catalina.core.AprLifecycleListener Line:180 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\apache-maven-3.5.4\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\usr\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Users\Administrator\AppData\Local\GitHubDesktop\bin;C:\Users\Administrator\AppData\Roaming\npm;.]
+2018-09-30 17:25:56.607 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+2018-09-30 17:25:56.608 INFO  org.springframework.web.context.ContextLoader Line:99  - Root WebApplicationContext: initialization completed in 2492 ms
+2018-09-30 17:25:56.666 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:99  - Servlet dispatcherServlet mapped to [/]
+2018-09-30 17:25:56.673 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:99  - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-30 17:25:56.674 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:99  - Mapping filter: 'shiroFilter' to: [/*]
+2018-09-30 17:25:57.297 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/admin],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.AdminController.update(com.system.bean.Admin)
+2018-09-30 17:25:57.298 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/admin],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.AdminController.addAdmin(com.system.bean.Admin,javax.servlet.http.HttpServletRequest)
+2018-09-30 17:25:57.299 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/admin/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.AdminController.getAdminById(java.lang.Integer)
+2018-09-30 17:25:57.300 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/admin/page/{page}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.AdminController.getAdminPage(java.lang.Integer,java.lang.Integer)
+2018-09-30 17:25:57.301 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/admin/checkAccount],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.AdminController.checkAccount(java.lang.String,java.lang.Integer)
+2018-09-30 17:25:57.301 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/admin/{id}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.AdminController.delAdmin(java.lang.Integer[])
+2018-09-30 17:25:57.303 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/admin/logout],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DefaultController.logout()
+2018-09-30 17:25:57.304 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/upload/file],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DefaultController.uploadFile(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2018-09-30 17:25:57.304 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/login],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DefaultController.login(java.lang.String,java.lang.String)
+2018-09-30 17:25:57.305 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/admin/info],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DefaultController.getAdminInfo()
+2018-09-30 17:25:57.305 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/auth/err],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DefaultController.unAuth()
+2018-09-30 17:25:57.308 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/dic],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DictionaryController.add(com.system.bean.Dictionary)
+2018-09-30 17:25:57.309 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/dic],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DictionaryController.update(com.system.bean.Dictionary)
+2018-09-30 17:25:57.309 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/dic],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DictionaryController.delete(java.lang.Integer[])
+2018-09-30 17:25:57.310 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/dic/check/value],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DictionaryController.checkValue(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-09-30 17:25:57.310 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/dic/page/{page}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DictionaryController.getPage(java.lang.Integer,java.lang.Integer)
+2018-09-30 17:25:57.311 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/dic/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DictionaryController.getDictionary(java.lang.Integer)
+2018-09-30 17:25:57.312 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/dic/check/code],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.DictionaryController.checkCode(java.lang.String,java.lang.Integer)
+2018-09-30 17:25:57.313 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/per/checkPath],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.PermissionController.checkPath(java.lang.String,java.lang.Integer,java.lang.Integer)
+2018-09-30 17:25:57.314 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/per],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.PermissionController.addPermission(com.system.bean.Permission)
+2018-09-30 17:25:57.315 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/per/{id}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.PermissionController.deletePermission(java.lang.Integer)
+2018-09-30 17:25:57.315 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/per],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.PermissionController.updatePermission(com.system.bean.Permission)
+2018-09-30 17:25:57.316 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/per],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.PermissionController.getTreeList()
+2018-09-30 17:25:57.316 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/per/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.PermissionController.getPermissionById(java.lang.Integer)
+2018-09-30 17:25:57.318 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role/{id}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.getRole(java.lang.Integer)
+2018-09-30 17:25:57.318 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.addRole(com.system.bean.Role)
+2018-09-30 17:25:57.319 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role/page/{page}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.getPage(java.lang.Integer,java.lang.Integer)
+2018-09-30 17:25:57.319 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role],methods=[PUT],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.updateRole(com.system.bean.Role)
+2018-09-30 17:25:57.320 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role/per/list/{role}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.getTreeList(java.lang.Integer)
+2018-09-30 17:25:57.320 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.getList()
+2018-09-30 17:25:57.321 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role/{ids}],methods=[DELETE],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.deleteRole(java.lang.Integer[])
+2018-09-30 17:25:57.323 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role/per/{role}],methods=[POST],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.addRolePer(java.lang.Integer,java.lang.String)
+2018-09-30 17:25:57.324 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/role/per/{role}],methods=[GET],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.system.controller.RoleController.getRolePer(java.lang.Integer)
+2018-09-30 17:25:57.325 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-09-30 17:25:57.328 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-30 17:25:57.329 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-30 17:25:57.330 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-30 17:25:57.332 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-30 17:25:57.333 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:99  - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-30 17:25:57.543 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:99  - Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 17:25:57.543 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:99  - Mapped URL path [/swagger-ui.html] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 17:25:57.543 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:99  - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 17:25:57.628 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:99  - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1500e009: startup date [Sun Sep 30 17:25:54 CST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@62e20a76
+2018-09-30 17:25:57.739 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-09-30 17:25:57.743 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-09-30 17:25:58.682 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Registering beans for JMX exposure on startup
+2018-09-30 17:25:58.692 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-09-30 17:25:58.693 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-09-30 17:25:58.694 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-09-30 17:25:58.698 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-09-30 17:25:58.711 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-09-30 17:25:58.723 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:99  - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1500e009,type=ConfigurationPropertiesRebinder]
+2018-09-30 17:25:58.736 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:99  - Starting beans in phase 0
+2018-09-30 17:25:58.750 INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory Line:99  - Setting initial instance status as: STARTING
+2018-09-30 17:25:58.789 INFO  com.netflix.discovery.DiscoveryClient Line:349 - Initializing Eureka in region us-east-1
+2018-09-30 17:25:58.872 INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider Line:70  - Using JSON encoding codec LegacyJacksonJson
+2018-09-30 17:25:58.873 INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider Line:71  - Using JSON decoding codec LegacyJacksonJson
+2018-09-30 17:25:59.004 INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider Line:80  - Using XML encoding codec XStreamXml
+2018-09-30 17:25:59.004 INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider Line:81  - Using XML decoding codec XStreamXml
+2018-09-30 17:25:59.264 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 17:25:59.310 INFO  com.netflix.discovery.DiscoveryClient Line:958 - Disable delta property : false
+2018-09-30 17:25:59.310 INFO  com.netflix.discovery.DiscoveryClient Line:959 - Single vip registry refresh property : null
+2018-09-30 17:25:59.310 INFO  com.netflix.discovery.DiscoveryClient Line:960 - Force full registry fetch : false
+2018-09-30 17:25:59.311 INFO  com.netflix.discovery.DiscoveryClient Line:961 - Application is null : false
+2018-09-30 17:25:59.311 INFO  com.netflix.discovery.DiscoveryClient Line:962 - Registered Applications size is zero : true
+2018-09-30 17:25:59.311 INFO  com.netflix.discovery.DiscoveryClient Line:964 - Application version is -1: true
+2018-09-30 17:25:59.311 INFO  com.netflix.discovery.DiscoveryClient Line:1047 - Getting all instance registry info from the eureka server
+2018-09-30 17:25:59.419 INFO  com.netflix.discovery.DiscoveryClient Line:1056 - The response status is 200
+2018-09-30 17:25:59.420 INFO  com.netflix.discovery.DiscoveryClient Line:1264 - Starting heartbeat executor: renew interval is: 30
+2018-09-30 17:25:59.423 INFO  com.netflix.discovery.InstanceInfoReplicator Line:60  - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-09-30 17:25:59.427 INFO  com.netflix.discovery.DiscoveryClient Line:449 - Discovery Client initialized at timestamp 1538299559426 with initial instances count: 0
+2018-09-30 17:25:59.441 INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Line:99  - Registering application systemGame with eureka with status UP
+2018-09-30 17:25:59.441 INFO  com.netflix.discovery.DiscoveryClient Line:1299 - Saw local status change event StatusChangeEvent [timestamp=1538299559441, current=UP, previous=STARTING]
+2018-09-30 17:25:59.443 INFO  com.netflix.discovery.DiscoveryClient Line:826 - DiscoveryClient_SYSTEMGAME/192.168.0.57:systemGame:8013: registering service...
+2018-09-30 17:25:59.450 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:99  - Starting beans in phase 2147483647
+2018-09-30 17:25:59.451 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:120 - Context refreshed
+2018-09-30 17:25:59.470 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:123 - Found 1 custom documentation plugin(s)
+2018-09-30 17:25:59.492 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2018-09-30 17:25:59.509 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:269 - Registered instance SYSTEMGAME/192.168.0.57:systemGame:8013 with status UP (replication=false)
+2018-09-30 17:25:59.511 INFO  com.netflix.discovery.DiscoveryClient Line:835 - DiscoveryClient_SYSTEMGAME/192.168.0.57:systemGame:8013 - registration status: 204
+2018-09-30 17:25:59.653 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: updateUsingPUT_1
+2018-09-30 17:25:59.684 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: getPageUsingGET_1
+2018-09-30 17:25:59.690 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: getTreeListUsingGET_1
+2018-09-30 17:25:59.746 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:99  - Tomcat started on port(s): 8013 (http) with context path ''
+2018-09-30 17:25:59.747 INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration Line:99  - Updating port to 8013
+2018-09-30 17:25:59.750 INFO  com.system.SystemGameApplication Line:99  - Started SystemGameApplication in 7.716 seconds (JVM running for 8.482)
+2018-09-30 17:26:21.989 INFO  com.netflix.discovery.DiscoveryClient Line:958 - Disable delta property : false
+2018-09-30 17:26:21.990 INFO  com.netflix.discovery.DiscoveryClient Line:959 - Single vip registry refresh property : null
+2018-09-30 17:26:21.990 INFO  com.netflix.discovery.DiscoveryClient Line:960 - Force full registry fetch : false
+2018-09-30 17:26:21.991 INFO  com.netflix.discovery.DiscoveryClient Line:961 - Application is null : false
+2018-09-30 17:26:21.991 INFO  com.netflix.discovery.DiscoveryClient Line:962 - Registered Applications size is zero : true
+2018-09-30 17:26:21.991 INFO  com.netflix.discovery.DiscoveryClient Line:964 - Application version is -1: false
+2018-09-30 17:26:21.991 INFO  com.netflix.discovery.DiscoveryClient Line:1047 - Getting all instance registry info from the eureka server
+2018-09-30 17:26:22.035 INFO  com.netflix.discovery.DiscoveryClient Line:1056 - The response status is 200
+2018-09-30 17:26:29.423 INFO  com.netflix.discovery.DiscoveryClient Line:958 - Disable delta property : false
+2018-09-30 17:26:29.423 INFO  com.netflix.discovery.DiscoveryClient Line:959 - Single vip registry refresh property : null
+2018-09-30 17:26:29.424 INFO  com.netflix.discovery.DiscoveryClient Line:960 - Force full registry fetch : false
+2018-09-30 17:26:29.424 INFO  com.netflix.discovery.DiscoveryClient Line:961 - Application is null : false
+2018-09-30 17:26:29.424 INFO  com.netflix.discovery.DiscoveryClient Line:962 - Registered Applications size is zero : true
+2018-09-30 17:26:29.424 INFO  com.netflix.discovery.DiscoveryClient Line:964 - Application version is -1: false
+2018-09-30 17:26:29.424 INFO  com.netflix.discovery.DiscoveryClient Line:1047 - Getting all instance registry info from the eureka server
+2018-09-30 17:26:29.474 INFO  com.netflix.discovery.DiscoveryClient Line:1056 - The response status is 200
+2018-09-30 17:26:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:26:51.557 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-30 17:26:51.558 INFO  org.springframework.web.servlet.DispatcherServlet Line:99  - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-30 17:26:51.585 INFO  org.springframework.web.servlet.DispatcherServlet Line:99  - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2018-09-30 17:26:51.658 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/login  
+ method: POST  
+ uri: /login  
+ params: username: yzz	password: JPfxYvlEZKU=	  
+ token: null 
+========================================================
+2018-09-30 17:26:51.866 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:99  - Refreshing SpringClientFactory-systemAdmin: startup date [Sun Sep 30 17:26:51 CST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1500e009
+2018-09-30 17:26:51.919 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:99  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-30 17:26:52.126 INFO  com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: systemAdmin.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-09-30 17:26:52.146 INFO  com.netflix.util.concurrent.ShutdownEnabledTimer Line:58  - Shutdown hook installed for: NFLoadBalancer-PingTimer-systemAdmin
+2018-09-30 17:26:52.151 INFO  com.netflix.loadbalancer.BaseLoadBalancer Line:192 - Client: systemAdmin instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=systemAdmin,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2018-09-30 17:26:52.156 INFO  com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:222 - Using serverListUpdater PollingServerListUpdater
+2018-09-30 17:26:52.170 INFO  com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: systemAdmin.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-09-30 17:26:52.172 INFO  com.netflix.loadbalancer.DynamicServerListLoadBalancer Line:150 - DynamicServerListLoadBalancer for client systemAdmin initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=systemAdmin,current list of Servers=[192.168.0.57:9012],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.0.57:9012;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@1f1a0163
+2018-09-30 17:26:52.288 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-30 17:26:52.289 INFO  org.springframework.web.servlet.DispatcherServlet Line:99  - FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-30 17:26:52.316 INFO  org.springframework.web.servlet.DispatcherServlet Line:99  - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2018-09-30 17:26:52.352 INFO  com.system.controller.AdminController Line:44  - ===<call login, TraceId=null, SpanId=null>===
+2018-09-30 17:26:53.109 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"code":0,"msg":"登入成功","data":{"token":1}}
+2018-09-30 17:26:53.133 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 17:26:53.142 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 17:26:53.159 INFO  com.netflix.config.ChainedDynamicProperty Line:115 - Flipping property: systemAdmin.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2018-09-30 17:26:53.460 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/role/per/list/1  
+ method: GET  
+ uri: /role/per/list/1  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 17:26:53.635 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 17:26:53.704 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 17:26:53.708 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 17:27:00.410 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 17:27:00.415 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 17:27:01.030 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/per  
+ method: GET  
+ uri: /per  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 17:27:01.568 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 17:27:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:28:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:29:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:30:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:30:51.746 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 17:30:59.329 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 17:31:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:32:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:33:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:34:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:35:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:35:51.764 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 17:35:59.347 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 17:36:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:36:43.548 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 17:36:43.553 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 17:36:43.569 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/role/per/list/1  
+ method: GET  
+ uri: /role/per/list/1  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 17:36:43.735 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 17:36:43.751 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 17:36:43.756 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 17:36:50.042 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 17:36:50.046 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 17:36:50.764 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/page/1  
+ method: GET  
+ uri: /admin/page/1  
+ params: pageSize: 10	  
+ token: 1 
+========================================================
+2018-09-30 17:36:50.764 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/role  
+ method: GET  
+ uri: /role  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 17:36:50.820 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":2,"roleName":"管理员","description":"没什么权限","createDate":"2017-05-05 14:34:06"},{"id":1,"roleName":"超级管理员","description":"拥有至高无上的权限！！！","createDate":"2017-05-03 15:51:30"}]}
+2018-09-30 17:36:50.859 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"list":[{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}],"pageNumber":1,"pageSize":10,"totalPage":1,"totalRow":1,"firstPage":true,"lastPage":true}}
+2018-09-30 17:36:52.494 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/1  
+ method: GET  
+ uri: /admin/1  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 17:36:52.534 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 17:36:55.223 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/checkAccount  
+ method: POST  
+ uri: /admin/checkAccount  
+ params: account: yzz	id: 1	  
+ token: 1 
+========================================================
+2018-09-30 17:36:55.269 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"code":0,"msg":"数据获取成功","data":{"result":true}}
+2018-09-30 17:37:03.742 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/checkAccount  
+ method: POST  
+ uri: /admin/checkAccount  
+ params: account: yzz	id: 1	  
+ token: 1 
+========================================================
+2018-09-30 17:37:03.772 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"code":0,"msg":"数据获取成功","data":{"result":true}}
+2018-09-30 17:37:08.894 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/checkAccount  
+ method: POST  
+ uri: /admin/checkAccount  
+ params: account: yzz	id: 1	  
+ token: 1 
+========================================================
+2018-09-30 17:37:08.922 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"code":0,"msg":"数据获取成功","data":{"result":true}}
+2018-09-30 17:37:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:38:01.111 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 17:38:01.115 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 17:38:01.127 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/role/per/list/1  
+ method: GET  
+ uri: /role/per/list/1  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 17:38:01.261 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 17:38:01.573 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 17:38:01.577 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 17:38:01.994 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/page/1  
+ method: GET  
+ uri: /admin/page/1  
+ params: pageSize: 10	  
+ token: 1 
+========================================================
+2018-09-30 17:38:02.050 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"list":[{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}],"pageNumber":1,"pageSize":10,"totalPage":1,"totalRow":1,"firstPage":true,"lastPage":true}}
+2018-09-30 17:38:02.297 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/role  
+ method: GET  
+ uri: /role  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 17:38:02.327 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":2,"roleName":"管理员","description":"没什么权限","createDate":"2017-05-05 14:34:06"},{"id":1,"roleName":"超级管理员","description":"拥有至高无上的权限！！！","createDate":"2017-05-03 15:51:30"}]}
+2018-09-30 17:38:05.273 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/logout  
+ method: POST  
+ uri: /admin/logout  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 17:38:05.276 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"code":0,"msg":"退出成功！","data":null}
+2018-09-30 17:38:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:39:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:40:34.190 INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl Line:541 - Current renewal threshold is : 5
+2018-09-30 17:40:34.372 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:40:51.782 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 17:40:59.364 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 17:41:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:42:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:43:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:44:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:45:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:45:51.799 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 17:45:59.381 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 17:46:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:47:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:48:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:49:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:50:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:50:51.816 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 17:50:59.398 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 17:51:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:52:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:53:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:54:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:55:34.190 INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl Line:541 - Current renewal threshold is : 5
+2018-09-30 17:55:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:55:51.833 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 17:55:59.415 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 17:56:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:57:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:58:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 17:59:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:00:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:00:51.850 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 18:00:59.432 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 18:01:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:02:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:03:33.819 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/login  
+ method: POST  
+ uri: /login  
+ params: username: yzz	password: JPfxYvlEZKU=	  
+ token: null 
+========================================================
+2018-09-30 18:03:33.825 INFO  com.system.controller.AdminController Line:44  - ===<call login, TraceId=null, SpanId=null>===
+2018-09-30 18:03:33.885 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"code":0,"msg":"登入成功","data":{"token":1}}
+2018-09-30 18:03:34.063 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:03:34.066 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 18:03:34.199 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/role/per/list/1  
+ method: GET  
+ uri: /role/per/list/1  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:03:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:03:34.915 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 18:03:34.933 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:03:34.938 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 18:03:41.357 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:03:41.360 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 18:03:41.752 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/per  
+ method: GET  
+ uri: /per  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:03:41.888 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 18:04:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:05:27.517 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:05:27.525 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 18:05:27.550 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/role/per/list/1  
+ method: GET  
+ uri: /role/per/list/1  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:05:28.158 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 18:05:28.178 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:05:28.181 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 18:05:28.743 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/per  
+ method: GET  
+ uri: /per  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:05:28.877 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 18:05:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:05:51.867 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 18:05:59.449 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 18:06:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:07:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:08:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:08:47.983 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:08:47.989 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 18:08:48.003 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/role/per/list/1  
+ method: GET  
+ uri: /role/per/list/1  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:08:48.169 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 18:08:48.306 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:08:48.308 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 18:08:48.699 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/per  
+ method: GET  
+ uri: /per  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:08:48.834 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 18:09:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:10:06.664 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/per  
+ method: GET  
+ uri: /per  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:10:06.822 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 18:10:19.170 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/per  
+ method: GET  
+ uri: /per  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:10:19.306 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 18:10:34.190 INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl Line:541 - Current renewal threshold is : 5
+2018-09-30 18:10:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:10:51.884 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 18:10:59.466 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 18:11:07.591 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/per  
+ method: GET  
+ uri: /per  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:11:07.727 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 18:11:32.312 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/per  
+ method: GET  
+ uri: /per  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:11:32.466 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 18:11:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:12:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:13:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:14:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:15:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:15:51.901 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 18:15:59.483 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 18:16:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:17:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:18:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:19:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:20:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:20:51.918 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 18:20:59.500 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 18:21:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:21:53.714 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/per  
+ method: GET  
+ uri: /per  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:21:53.875 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 18:21:56.748 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:21:56.754 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 18:21:56.776 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/role/per/list/1  
+ method: GET  
+ uri: /role/per/list/1  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:21:57.281 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 18:21:57.296 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/admin/info  
+ method: GET  
+ uri: /admin/info  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:21:57.299 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":{"id":1,"headPortrait":"/api/static/2018082803583304508a65402-b421-4c93-b5ac-c7c80185c5d7.png","account":"yzz","name":"杨贞泽","password":"02CF6485D51F95F1109A0C937EC7BB80","gender":"0","phone":"","email":"","isEnable":null,"adminType":1,"description":"","loginNum":6,"lastLogin":"2017-10-20 18:30:48","lastLoginIp":"0:0:0:0:0:0:0:1","createDate":"2017-10-20 18:10:56"}}
+2018-09-30 18:21:57.860 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/per  
+ method: GET  
+ uri: /per  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:21:57.992 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 18:22:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:22:36.654 INFO  com.system.aop.LogRecordAspect Line:55  - 请求开始
+======================================================== 
+ url: http://localhost:8013/per  
+ method: GET  
+ uri: /per  
+ params:   
+ token: 1 
+========================================================
+2018-09-30 18:22:36.790 INFO  com.system.aop.LogRecordAspect Line:58  - 请求结束，controller的返回值是 {"msg":"数据获取成功","code":0,"data":[{"id":1,"permission_name":"系统管理","permission_type":0,"visit_url":"system","icon":"dashboard","sort":null,"parent_id":null,"create_name":null,"create_date":null,"update_name":null,"children":[{"id":2,"permission_name":"权根分配","permission_type":0,"visit_url":"permission","icon":"component","sort":null,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":48,"permission_name":"管理员管理","permission_type":0,"visit_url":"admin","icon":"peoples","sort":0,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":49,"permission_name":"系统角色","permission_type":0,"visit_url":"role","icon":"people","sort":1,"parent_id":1,"create_name":null,"create_date":null,"update_name":null},{"id":50,"permission_name":"数据字典","permission_type":0,"visit_url":"dictionary","icon":"documentation","sort":2,"parent_id":1,"create_name":null,"create_date":null,"update_name":null}]}]}
+2018-09-30 18:23:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:24:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:25:34.190 INFO  com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl Line:541 - Current renewal threshold is : 5
+2018-09-30 18:25:34.371 INFO  com.netflix.eureka.registry.AbstractInstanceRegistry Line:1247 - Running the evict task with compensationTime 0ms
+2018-09-30 18:25:51.935 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2018-09-30 18:25:59.517 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
