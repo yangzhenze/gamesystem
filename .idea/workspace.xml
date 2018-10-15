@@ -1,95 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b22e7d3d-4871-4fb7-89d7-44ff69dde4c1" name="Default Changelist" comment="创建项目Dev">
+    <list default="true" id="b22e7d3d-4871-4fb7-89d7-44ff69dde4c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/log/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/system_game/src/main/java/com/system/controller/LogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/spring-boot-log-info.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/spring-boot-log-info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system-game/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/system-game/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system-game/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/system-game/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system-game/src/styles/element-ui.scss" beforeDir="false" afterPath="$PROJECT_DIR$/system-game/src/styles/element-ui.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system-game/src/views/admin/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/system-game/src/views/admin/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system-game/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/system-game/src/views/login/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system-game/src/views/permission/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/system-game/src/views/permission/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system_admin/target/classes/com/system/common/util/StrUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/system_admin/target/classes/com/system/common/util/StrUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system_game/target/classes/com/system/common/util/StrUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/system_game/target/classes/com/system/common/util/StrUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/system-game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/system-game/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/system_admin/target/" />
     <ignored path="$PROJECT_DIR$/system_game/target/" />
     <ignored path="$PROJECT_DIR$/system_provide/target/" />
+    <ignored path="$PROJECT_DIR$/syslog/target/" />
+    <ignored path="$PROJECT_DIR$/log/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-915265033">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.41" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="babelrc" value="1" />
-          <entry key="class" value="7" />
+          <entry key="class" value="27" />
           <entry key="html" value="2" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="57" />
-          <entry key="js" value="10" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="175" />
+          <entry key="js" value="11" />
           <entry key="json" value="1" />
           <entry key="log" value="3" />
           <entry key="md" value="2" />
           <entry key="png" value="1" />
           <entry key="scss" value="3" />
-          <entry key="vue" value="9" />
-          <entry key="xml" value="11" />
-          <entry key="yml" value="25" />
+          <entry key="sql" value="1" />
+          <entry key="vue" value="11" />
+          <entry key="xml" value="30" />
+          <entry key="yml" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="7" />
+          <entry key="CLASS" value="27" />
           <entry key="HTML" value="2" />
-          <entry key="IDEA_MODULE" value="1" />
+          <entry key="IDEA_MODULE" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="57" />
+          <entry key="JAVA" value="175" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="10" />
+          <entry key="JavaScript" value="11" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="3" />
-          <entry key="Vue.js" value="9" />
-          <entry key="XML" value="11" />
-          <entry key="YAML" value="25" />
+          <entry key="SQL" value="1" />
+          <entry key="Vue.js" value="11" />
+          <entry key="XML" value="30" />
+          <entry key="YAML" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="21" />
+          <entry key="dummy" value="22" />
           <entry key="html" value="2" />
-          <entry key="java" value="181" />
+          <entry key="java" value="4117" />
           <entry key="json" value="5" />
           <entry key="md" value="124" />
-          <entry key="txt" value="15" />
+          <entry key="txt" value="18" />
           <entry key="vue" value="21" />
-          <entry key="xml" value="22" />
-          <entry key="yml" value="176" />
+          <entry key="xml" value="43" />
+          <entry key="yml" value="294" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="2" />
-          <entry key="JAVA" value="181" />
+          <entry key="JAVA" value="4117" />
           <entry key="JSON" value="5" />
           <entry key="Markdown" value="124" />
-          <entry key="PLAIN_TEXT" value="36" />
+          <entry key="PLAIN_TEXT" value="40" />
           <entry key="Vue.js" value="21" />
-          <entry key="XML" value="22" />
-          <entry key="YAML" value="176" />
+          <entry key="XML" value="43" />
+          <entry key="YAML" value="294" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -105,23 +127,51 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system-game/src/App.vue">
+        <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/aop/LogRecordAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            <state relative-caret-position="391">
+              <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/controller/DictionaryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/system-game/src/views/permission/index.vue">
+        <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/controller/LogController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="59" column="55" lean-forward="true" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
-              <folding>
-                <element signature="n#style#0;n#el-form#0;n#el-dialog#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#2616#2662#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="276">
+              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/Admin2Service.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/hystrix/Admin2ServiceHystrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/aop/ServiceHystrixAspect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -131,6 +181,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -138,6 +189,15 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>fe</find>
+      <find>GetLogsRequest</find>
+      <find>GetHistograms</find>
+      <find>GetHistogramsRequest</find>
+      <find>请求失败</find>
+      <find>logSize</find>
+      <find>mysql</find>
+      <find>druid</find>
+      <find>package com\.ly\.log\.entity\;\n\nimport java\.io\.Serializable\;\nimport lombok\.Getter\;\nimport lombok\.Setter\;\n\nimport javax\.persistence\.Column\;\n\n\/\*\*\n \* \@author auto create\n \* \@Date 2018\/28\/15 11\:28\:34\n \*\/\npublic class log implements Serializable\{\n\nprivate static final long serialVersionUID \= 1L\;\n\/\*\*\n \*程序类型\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;program_type\&quot;\)\nprivate java\.lang\.String programType\;\n\n\/\*\*\n \*日志类型\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;log_type\&quot;\)\nprivate java\.lang\.String logType\;\n\n\/\*\*\n \*事件类型\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;event_type\&quot;\)\nprivate java\.lang\.String eventType\;\n\n\/\*\*\n \*日志名称\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;logname\&quot;\)\nprivate java\.lang\.String logname\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params1\&quot;\)\nprivate java\.lang\.String params1\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params2\&quot;\)\nprivate java\.lang\.String params2\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params3\&quot;\)\nprivate java\.lang\.String params3\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params4\&quot;\)\nprivate java\.lang\.String params4\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params5\&quot;\)\nprivate java\.lang\.String params5\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params6\&quot;\)\nprivate java\.lang\.String params6\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params7\&quot;\)\nprivate java\.lang\.String params7\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params8\&quot;\)\nprivate java\.lang\.String params8\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params9\&quot;\)\nprivate java\.lang\.String params9\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params10\&quot;\)\nprivate java\.lang\.String params10\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params11\&quot;\)\nprivate java\.lang\.String params11\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params12\&quot;\)\nprivate java\.lang\.String params12\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params13\&quot;\)\nprivate java\.lang\.String params13\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params14\&quot;\)\nprivate java\.lang\.String params14\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params15\&quot;\)\nprivate java\.lang\.String params15\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params16\&quot;\)\nprivate java\.lang\.String params16\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params17\&quot;\)\nprivate java\.lang\.String params17\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params18\&quot;\)\nprivate java\.lang\.String params18\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params19\&quot;\)\nprivate java\.lang\.String params19\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params20\&quot;\)\nprivate java\.lang\.String params20\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params21\&quot;\)\nprivate java\.lang\.String params21\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params22\&quot;\)\nprivate java\.lang\.String params22\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params23\&quot;\)\nprivate java\.lang\.String params23\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params24\&quot;\)\nprivate java\.lang\.String params24\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params25\&quot;\)\nprivate java\.lang\.String params25\;\n\n        \}</find>
+      <find>projectFilePath</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -146,10 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/system_provide/pom.xml" />
-        <option value="$PROJECT_DIR$/system_game/pom.xml" />
-        <option value="$PROJECT_DIR$/system_admin/pom.xml" />
-        <option value="$PROJECT_DIR$/system-game/package.json" />
         <option value="$PROJECT_DIR$/system_game/src/main/java/com/system/aop/LogRecordAspect.java" />
         <option value="$PROJECT_DIR$/system_game/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/system_admin/src/main/resources/application.yml" />
@@ -171,6 +227,36 @@
         <option value="$PROJECT_DIR$/system-game/src/views/admin/index.vue" />
         <option value="$PROJECT_DIR$/system-game/src/views/permission/index.vue" />
         <option value="$PROJECT_DIR$/system-game/src/App.vue" />
+        <option value="$PROJECT_DIR$/syslog/src/main/java/com/syslog/Sdksample.java" />
+        <option value="$PROJECT_DIR$/syslog/src/main/java/com/syslog/sdkTest.java" />
+        <option value="$PROJECT_DIR$/syslog/src/main/java/com/syslog/LogUtil.java" />
+        <option value="$PROJECT_DIR$/syslog/pom.xml" />
+        <option value="$PROJECT_DIR$/syslog/src/main/java/com/syslog/MaxCompute.java" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/ly/log/common/util/Page.java" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/ly/log/common/util/CreateModel.java" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/ly/log/common/util/Ret.java" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/ly/log/entity/log.java" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/ly/log/dao/LogRepository.java" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/ly/log/service/LogService.java" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/ly/log/Swagger2.java" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/ly/log/LogApplication.java" />
+        <option value="$PROJECT_DIR$/log/pom.xml" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/ly/log/entity/Log.java" />
+        <option value="$PROJECT_DIR$/log/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/ly/log/common/util/DateUtil.java" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/ly/log/dao/ILogDao.java" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/ly/log/service/ILogService.java" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/ly/log/service/impl/LogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/ly/log/common/util/FileUtil.java" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/ly/log/dao/impl/LogDaoImpl.java" />
+        <option value="$PROJECT_DIR$/log/src/main/java/com/ly/log/controller/LogController.java" />
+        <option value="$PROJECT_DIR$/system_game/src/main/java/com/system/service/hystrix/LogServiceHystrix.java" />
+        <option value="$PROJECT_DIR$/system_game/src/main/java/com/system/service/LogService.java" />
+        <option value="$PROJECT_DIR$/system_game/src/main/java/com/system/service/Log2Service.java" />
+        <option value="$PROJECT_DIR$/system_game/src/main/java/com/system/service/hystrix/LogService.java" />
+        <option value="$PROJECT_DIR$/system_game/src/main/java/com/system/service/Admin2Service.java" />
+        <option value="$PROJECT_DIR$/system_game/src/main/java/com/system/service/hystrix/Admin2ServiceHystrix.java" />
+        <option value="$PROJECT_DIR$/system_game/src/main/java/com/system/controller/LogController.java" />
       </list>
     </option>
   </component>
@@ -191,7 +277,17 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="syslog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="syslog" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -203,9 +299,9 @@
       <path value="$PROJECT_DIR$/system-game/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1923" />
-    <option name="y" value="8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
@@ -223,6 +319,90 @@
               <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
+              <item name="system_game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
+              <item name="system_game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
+              <item name="system_game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
+              <item name="system_game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
+              <item name="system_game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
+              <item name="system_game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
+              <item name="system_game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
+              <item name="system_game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
+              <item name="system_game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="hystrix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
+              <item name="system_game" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -236,8 +416,9 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538962448403" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/system-game" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539599502977" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flume" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="E:\workspace\gamesystem\system-game\node_modules\eslint" />
@@ -246,6 +427,19 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.system.service.hystrix" />
+      <recent name="com.system.service" />
+      <recent name="com.system.controller" />
+      <recent name="com.ly.log.common.util" />
+      <recent name="com.ly.log" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\gamesystem\log\src\main\java\com\ly\log" />
+      <recent name="E:\workspace\gamesystem\log\src\main\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -259,7 +453,88 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.Unnamed">
+  <component name="RunManager" selected="Spring Boot.SystemGameApplication">
+    <configuration name="CreateModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ly.log.common.util.CreateModel" />
+      <module name="log" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ly.log.common.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DateUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ly.log.common.util.DateUtil" />
+      <module name="log" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ly.log.common.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.syslog.LogUtil" />
+      <module name="syslog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.syslog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MaxCompute" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.syslog.MaxCompute" />
+      <module name="syslog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.syslog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sdkTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.syslog.sdkTest" />
+      <module name="syslog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.syslog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="log" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ly.log.LogApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SyslogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="syslog" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.syslog.SyslogApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SystemAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="system_admin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.system.SystemAdminApplication" />
@@ -307,7 +582,23 @@
       <item itemvalue="Spring Boot.SystemGameApplication" />
       <item itemvalue="Spring Boot.SystemProvideApplication" />
       <item itemvalue="Spring Boot.SystemAdminApplication" />
+      <item itemvalue="Spring Boot.SyslogApplication" />
+      <item itemvalue="Application.sdkTest" />
+      <item itemvalue="Application.LogUtil" />
+      <item itemvalue="Application.MaxCompute" />
+      <item itemvalue="Spring Boot.LogApplication" />
+      <item itemvalue="Application.CreateModel" />
+      <item itemvalue="Application.DateUtil" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DateUtil" />
+        <item itemvalue="Application.CreateModel" />
+        <item itemvalue="Application.MaxCompute" />
+        <item itemvalue="Application.LogUtil" />
+        <item itemvalue="Application.sdkTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -320,7 +611,13 @@
       <option name="presentableId" value="Default" />
       <updated>1538275760636</updated>
       <workItem from="1538275764149" duration="21978000" />
-      <workItem from="1538962193175" duration="660000" />
+      <workItem from="1538962193175" duration="27386000" />
+      <workItem from="1539144051097" duration="226000" />
+      <workItem from="1539144312461" duration="13050000" />
+      <workItem from="1539243636185" duration="5803000" />
+      <workItem from="1539566674775" duration="6000" />
+      <workItem from="1539566710894" duration="241000" />
+      <workItem from="1539571112248" duration="21242000" />
     </task>
     <task id="LOCAL-00001" summary="创建项目">
       <created>1538292912232</created>
@@ -336,14 +633,22 @@
       <option name="project" value="LOCAL" />
       <updated>1538294035901</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="创建项目Dev">
+      <created>1538962899241</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1538962899241</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22638000" />
+    <option name="totallyTimeSpent" value="89932000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1923" y="8" width="1936" height="1096" extended-state="0" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -351,10 +656,10 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.358742" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32917964" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32917964" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50053304" side_tool="true" weight="0.6438214" />
       <window_info anchor="bottom" id="Messages" order="2" weight="0.32917964" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.32917964" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
@@ -363,55 +668,21 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32917964" />
       <window_info anchor="bottom" id="Run" order="9" weight="0.32917964" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.39667705" />
+      <window_info anchor="bottom" id="Debug" order="10" sideWeight="0.49946696" weight="0.5908619" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Maven Projects" order="1" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Database" order="2" weight="0.32995737" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Bean Validation" order="5" />
+      <window_info anchor="right" id="Bean Validation" order="5" weight="0.32995737" />
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Web" order="4" side_tool="true" />
-      <window_info id="Designer" order="5" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.25" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32917964" />
-      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32917964" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.32917964" />
-      <window_info anchor="bottom" id="Java Enterprise" order="3" weight="0.32917964" />
-      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="5" weight="0.3434453" />
-      <window_info anchor="bottom" id="Spring" order="6" weight="0.32917964" />
-      <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="bottom" id="Find" order="8" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="9" weight="0.32917964" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.39667705" />
-      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="13" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Maven Projects" order="1" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Bean Validation" order="5" />
-      <window_info anchor="right" id="Palette" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -450,8 +721,103 @@
     <MESSAGE value="创建项目Dev" />
     <option name="LAST_COMMIT_MESSAGE" value="创建项目Dev" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/syslog/src/main/java/com/syslog/Sdksample.java</url>
+          <line>155</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/syslog/src/main/java/com/syslog/Sdksample.java</url>
+          <line>161</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/syslog/src/main/java/com/syslog/Sdksample.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/syslog/src/main/java/com/syslog/Sdksample.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/syslog/src/main/java/com/syslog/sdkTest.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/syslog/src/main/java/com/syslog/MaxCompute.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/syslog/src/main/java/com/syslog/MaxCompute.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/syslog/src/main/java/com/syslog/MaxCompute.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/log/src/main/java/com/ly/log/controller/LogController.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((HashMap) i.results).keySet" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>((HashMap) i.results).keySet</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i.results</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>i.getResource()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>res4.IsCompleted()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>res3.GetHistograms()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>flg.getLogTagsCount()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>request.getParameterNames().nextElement().</expression-string>
         <language-id>JAVA</language-id>
@@ -472,373 +838,419 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>request.getParameterNames()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>request.getParameterNames().</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/log/spring-boot-log-error.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_admin/pom.xml">
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/common/util/DateJsonValueProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="104" column="22" selection-start-line="104" selection-start-column="22" selection-end-line="104" selection-end-column="22" />
+        <state relative-caret-position="23">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/common/Const.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.14/lombok-1.16.14.jar!/lombok/Getter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/common/util/CreateModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.0.10.RELEASE/spring-data-jpa-2.0.10.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/dao/LogRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.5.RELEASE/spring-boot-autoconfigure-2.0.5.RELEASE.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="97" column="50" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/LogApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#388#389#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system_admin/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="506">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_provide/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/system_admin/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="271">
+          <caret line="55" column="21" selection-start-line="51" selection-start-column="8" selection-end-line="55" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/DictionaryService.java">
+    <entry file="file://$PROJECT_DIR$/log/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        <state relative-caret-position="221">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/PermissionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/RoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="20" column="99" lean-forward="true" selection-start-line="20" selection-start-column="99" selection-end-line="20" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_admin/src/main/java/com/system/service/IAdminService.java">
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/entity/Log.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/AdminService.java">
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/common/util/StrUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="33" />
+        <state relative-caret-position="23">
+          <caret line="156" column="26" selection-start-line="156" selection-start-column="26" selection-end-line="156" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_admin/src/main/java/com/system/service/ipml/AdminerviceImpl.java">
+    <entry file="file://$PROJECT_DIR$/system_admin/src/main/java/com/system/dao/impl/DictionaryDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/hystrix/AdminServiceHystrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-139">
+        <state relative-caret-position="207">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/hystrix/DictionaryServiceHystrix.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.0.8.RELEASE/spring-jdbc-5.0.8.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="449">
+          <caret line="542" column="5" lean-forward="true" selection-start-line="542" selection-start-column="5" selection-end-line="542" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/hystrix/PermissionServiceHystrix.java">
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/common/util/DateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="233">
+          <caret line="268" column="8" selection-start-line="268" selection-start-column="8" selection-end-line="268" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/hystrix/RoleServiceHystrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/config/shiro/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1058">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/mgt/DefaultSecurityManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="158" selection-start-line="158" selection-end-line="158" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/authc/AbstractAuthenticator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/controller/DefaultController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="91" column="50" selection-start-line="91" selection-start-column="50" selection-end-line="91" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/SystemGameApplication.java">
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/service/ILogService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <caret line="9" column="95" selection-start-line="9" selection-start-column="95" selection-end-line="9" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/github/openfeign/feign-core/9.5.1/feign-core-9.5.1.jar!/feign/Request.class">
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/Swagger2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="707">
-          <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="36" />
+        <state relative-caret-position="736">
+          <caret line="47" column="93" lean-forward="true" selection-start-line="47" selection-start-column="93" selection-end-line="47" selection-end-column="93" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/config/FeignConfigure.java" />
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/resources/application-dev.yml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.9.RELEASE/spring-webmvc-5.0.9.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="33" column="39" selection-start-line="18" selection-end-line="33" selection-end-column="39" />
+        <state relative-caret-position="182">
+          <caret line="571" selection-start-line="571" selection-end-line="571" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/resources/application-prod.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_admin/src/main/java/com/system/Swagger2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_admin/src/main/java/com/system/SystemAdminApplication.java">
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/dao/ILogDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/rt.jar!/com/sun/xml/internal/messaging/saaj/packaging/mime/internet/MimeUtility.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1219">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/common/util/StrUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16307">
-          <caret line="725" selection-start-line="725" selection-end-line="725" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/common/util/DateUtil.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
-          <caret line="112" column="15" selection-start-line="112" selection-start-column="15" selection-end-line="112" selection-end-column="15" />
+          <caret line="126" column="45" selection-start-line="126" selection-start-column="45" selection-end-line="126" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_admin/src/main/java/com/system/common/util/StrUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="770" column="48" lean-forward="true" selection-start-line="770" selection-start-column="48" selection-end-line="770" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="138">
-            <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/aop/LogRecordAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="38" column="62" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.8.13/aspectjweaver-1.8.13.jar!/org/aspectj/runtime/reflect/SignatureImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjweaver/1.8.13/aspectjweaver-1.8.13.jar!/org/aspectj/lang/Signature.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/test/java/com/system/SystemGameApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/aop/ServiceHystrixAspect.java">
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/common/util/FileUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/config/shiro/ShiroFormAuthenticationFilter.java">
+    <entry file="file://$PROJECT_DIR$/system_admin/src/main/java/com/system/dao/BaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/config/shiro/ShiroPermissionsAuthorizationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+        <state relative-caret-position="-1652">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="20" />
+          <folding>
+            <element signature="e#4157#4158#0" expanded="true" />
+            <element signature="e#4225#4226#0" expanded="true" />
+            <element signature="e#4297#4298#0" expanded="true" />
+            <element signature="e#4356#4357#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system_admin/src/main/java/com/system/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="58" column="60" lean-forward="true" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
+        <state relative-caret-position="230">
+          <caret line="103" column="115" selection-start-line="103" selection-start-column="70" selection-end-line="103" selection-end-column="115" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/config/shiro/ShiroRealm.java">
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/dao/impl/LogDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="47" column="50" lean-forward="true" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system-game/src/styles/btn.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1137">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system-game/src/styles/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1127">
-          <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system-game/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-953">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system-game/src/styles/element-ui.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system-game/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system-game/src/views/login/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3496">
-          <caret line="153" column="25" lean-forward="true" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system-game/src/views/admin/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="102" column="16" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="102" selection-end-column="16" />
+        <state relative-caret-position="418">
+          <caret line="100" column="10" selection-start-line="100" selection-start-column="10" selection-end-line="100" selection-end-column="10" />
           <folding>
-            <element signature="n#style#0;n#el-form#0;n#el-dialog#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system-game/src/App.vue">
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/common/util/Page.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        <state relative-caret-position="134">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system-game/src/views/permission/index.vue">
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/common/util/Ret.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5842">
+          <caret line="262" column="33" lean-forward="true" selection-start-line="262" selection-start-column="33" selection-end-line="262" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1663#1679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar!/org/codehaus/jackson/JsonFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="376" selection-start-line="376" selection-end-line="376" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar!/org/codehaus/jackson/map/ObjectMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="755" selection-start-line="755" selection-end-line="755" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/service/impl/LogServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/src/main/java/com/ly/log/controller/LogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="121" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/hystrix/AdminServiceHystrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/resources/application-prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/controller/DefaultController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/hystrix/DictionaryServiceHystrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/DictionaryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="35" column="1" lean-forward="true" selection-start-line="12" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/hystrix/LogServiceHystrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#800#801#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/Log2Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/hystrix/LogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/aop/ServiceHystrixAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/aop/LogRecordAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/controller/DictionaryController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="59" column="55" lean-forward="true" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#el-form#0;n#el-dialog#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#2616#2662#0" expanded="true" />
-          </folding>
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/Admin2Service.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/hystrix/Admin2ServiceHystrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/controller/LogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
         </state>
       </provider>
     </entry>

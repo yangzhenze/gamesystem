@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/system_admin/pom.xml" />
         <option value="$PROJECT_DIR$/system_game/pom.xml" />
         <option value="$PROJECT_DIR$/system_provide/pom.xml" />
+        <option value="$PROJECT_DIR$/syslog/pom.xml" />
+        <option value="$PROJECT_DIR$/log/pom.xml" />
       </list>
     </option>
   </component>

@@ -6,12 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="log" />
+        <module name="syslog" />
         <module name="system_admin" />
         <module name="system_game" />
         <module name="system_provide" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="log" target="1.8" />
+      <module name="syslog" target="1.8" />
       <module name="system_admin" target="1.8" />
       <module name="system_game" target="1.8" />
       <module name="system_provide" target="1.8" />

@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: systemLog
+  datasource:
+    # Druid\u8FDE\u63A5\u6C60\u914D\u7F6E
+    druid:
+        url: jdbc:mysql://123.207.61.212:3306/log?useSSL=false&characterEncoding=utf-8&autoReconnect=true
+        username: root
+        password: yangzhenze6712
+        initial-size: 5 #\u521D\u59CB\u5316\u8FDE\u63A5
+        max-active: 20 #\u6700\u5927\u5E76\u53D1\u8FDE\u63A5\u6570
+        min-idle: 10  #\u6700\u5C0F\u7A7A\u95F2\u8FDE\u63A5\u6570
+        max-wait: 10  #\u914D\u7F6E\u83B7\u53D6\u8FDE\u63A5\u7B49\u5F85\u8D85\u65F6\u7684\u65F6\u95F4
+        filter:
+          stat:
+            log-slow-sql: true #sql
+            slow-sql-millis: 2000 #\u6162sql\u8BB0\u5F55
+        filters: stat,wall #\u76D1\u63A7\u7EDF\u8BA1\u7528\u7684filter:stat\u65E5\u5FD7\u7528\u7684filter:log4j\u9632\u5FA1sql\u6CE8\u5165\u7684filter:wall
+    driver-class-name: com.mysql.jdbc.Driver
+
+#读写文件路径
+projectFilePath: E:\logrecord
+#logstore配置文件
+logStoreConfig: logstore.properties
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9011/eureka/
+server:
+  port: 9014
