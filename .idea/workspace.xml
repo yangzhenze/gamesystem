@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b22e7d3d-4871-4fb7-89d7-44ff69dde4c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/log/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system_game/src/main/java/com/system/controller/LogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/spring-boot-log-info.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/spring-boot-log-info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/system-game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/system-game/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/system_admin/target/" />
     <ignored path="$PROJECT_DIR$/system_game/target/" />
@@ -68,7 +60,7 @@
           <entry key="sql" value="1" />
           <entry key="vue" value="11" />
           <entry key="xml" value="30" />
-          <entry key="yml" value="39" />
+          <entry key="yml" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -86,7 +78,7 @@
           <entry key="SQL" value="1" />
           <entry key="Vue.js" value="11" />
           <entry key="XML" value="30" />
-          <entry key="YAML" value="39" />
+          <entry key="YAML" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -129,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/aop/LogRecordAspect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+            <state relative-caret-position="157">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -144,7 +136,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/controller/LogController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
@@ -153,8 +145,22 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/system_game/src/main/resources/application-dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/Admin2Service.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system_game/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -198,6 +204,7 @@
       <find>druid</find>
       <find>package com\.ly\.log\.entity\;\n\nimport java\.io\.Serializable\;\nimport lombok\.Getter\;\nimport lombok\.Setter\;\n\nimport javax\.persistence\.Column\;\n\n\/\*\*\n \* \@author auto create\n \* \@Date 2018\/28\/15 11\:28\:34\n \*\/\npublic class log implements Serializable\{\n\nprivate static final long serialVersionUID \= 1L\;\n\/\*\*\n \*程序类型\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;program_type\&quot;\)\nprivate java\.lang\.String programType\;\n\n\/\*\*\n \*日志类型\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;log_type\&quot;\)\nprivate java\.lang\.String logType\;\n\n\/\*\*\n \*事件类型\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;event_type\&quot;\)\nprivate java\.lang\.String eventType\;\n\n\/\*\*\n \*日志名称\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;logname\&quot;\)\nprivate java\.lang\.String logname\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params1\&quot;\)\nprivate java\.lang\.String params1\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params2\&quot;\)\nprivate java\.lang\.String params2\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params3\&quot;\)\nprivate java\.lang\.String params3\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params4\&quot;\)\nprivate java\.lang\.String params4\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params5\&quot;\)\nprivate java\.lang\.String params5\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params6\&quot;\)\nprivate java\.lang\.String params6\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params7\&quot;\)\nprivate java\.lang\.String params7\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params8\&quot;\)\nprivate java\.lang\.String params8\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params9\&quot;\)\nprivate java\.lang\.String params9\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params10\&quot;\)\nprivate java\.lang\.String params10\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params11\&quot;\)\nprivate java\.lang\.String params11\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params12\&quot;\)\nprivate java\.lang\.String params12\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params13\&quot;\)\nprivate java\.lang\.String params13\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params14\&quot;\)\nprivate java\.lang\.String params14\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params15\&quot;\)\nprivate java\.lang\.String params15\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params16\&quot;\)\nprivate java\.lang\.String params16\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params17\&quot;\)\nprivate java\.lang\.String params17\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params18\&quot;\)\nprivate java\.lang\.String params18\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params19\&quot;\)\nprivate java\.lang\.String params19\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params20\&quot;\)\nprivate java\.lang\.String params20\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params21\&quot;\)\nprivate java\.lang\.String params21\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params22\&quot;\)\nprivate java\.lang\.String params22\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params23\&quot;\)\nprivate java\.lang\.String params23\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params24\&quot;\)\nprivate java\.lang\.String params24\;\n\n\/\*\*\n \*\n \*\/\n\@Getter\n\@Setter\n\@Column\(name\=\&quot;params25\&quot;\)\nprivate java\.lang\.String params25\;\n\n        \}</find>
       <find>projectFilePath</find>
+      <find>systemAdminFeignClient</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -343,64 +350,6 @@
               <item name="system_game" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
-              <item name="system_game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
-              <item name="system_game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
-              <item name="system_game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
-              <item name="system_game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
-              <item name="system_game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="hystrix" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gamesystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gamesystem" type="462c0819:PsiDirectoryNode" />
-              <item name="system_game" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -416,7 +365,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539599502977" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539599728694" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../flume" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -617,7 +566,7 @@
       <workItem from="1539243636185" duration="5803000" />
       <workItem from="1539566674775" duration="6000" />
       <workItem from="1539566710894" duration="241000" />
-      <workItem from="1539571112248" duration="21242000" />
+      <workItem from="1539571112248" duration="21505000" />
     </task>
     <task id="LOCAL-00001" summary="创建项目">
       <created>1538292912232</created>
@@ -640,15 +589,21 @@
       <option name="project" value="LOCAL" />
       <updated>1538962899241</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="创建项目Dev">
+      <created>1539599754083</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539599754083</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89932000" />
+    <option name="totallyTimeSpent" value="90195000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -1127,18 +1082,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/system_game/src/main/resources/application-prod.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/controller/DefaultController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1223,10 +1172,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/hystrix/Admin2ServiceHystrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/aop/LogRecordAspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        <state relative-caret-position="157">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1237,20 +1193,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/Admin2Service.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/hystrix/Admin2ServiceHystrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/controller/LogController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/java/com/system/service/Admin2Service.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system_game/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
