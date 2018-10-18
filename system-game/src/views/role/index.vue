@@ -100,8 +100,9 @@
     },
     methods: {
       getPage(curPage, pageSize) {
+        const params = { 'pageSize': pageSize }
         return new Promise((resolve, reject) => {
-          getList(curPage, pageSize).then(response => {
+          getList(curPage, params).then(response => {
             resolve(response)
           }).catch(error => {
             reject(error)
