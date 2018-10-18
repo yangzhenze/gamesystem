@@ -1,9 +1,9 @@
 <template>
   <div>
-  <el-table ref="table" :data="list" v-loading.body="listLoading" element-loading-text="加载" @row-click="handleRowChange" @selection-change="selsChange" border fit highlight-current-row >
+  <el-table ref="table" :data="list"  v-loading.body="listLoading" element-loading-text="加载" @row-click="handleRowChange" @selection-change="selsChange" border fit highlight-current-row  >
     <el-table-column type="selection">
     </el-table-column>
-    <el-table-column v-for="(column, index) in columns" :key="column.value" :label="column.text" :width="column.width">
+    <el-table-column v-for="(column, index) in columns" :key="column.value" :label="column.text" :width="column.width" :sortable="column.sort" :prop="column.value">
       <template slot-scope="scope">
         {{scope.row[column.value]}}
       </template>
@@ -43,6 +43,14 @@
           type: Array,
           default: () => []
         },
+        isLoad: {
+          type: Boolean,
+          default: true
+        },
+        sortKey: {
+          type: String,
+          default: null
+        },
         controlColumn: { // 操作列
           type: Boolean,
           default: false
@@ -53,7 +61,7 @@
           pagination: {
             curPage: 1,
             pageSize: 10,
-            totalRow: 10
+            totalRow: 0
           },
           list: [],
           sels: [],
@@ -61,12 +69,16 @@
         }
       },
       created() {
-        this.getPage(this.pagination.curPage, this.pagination.pageSize)
+        if (this.isLoad) {
+          this.getPage(this.pagination.curPage, this.pagination.pageSize)
+        } else {
+          this.listLoading = false
+        }
       },
       methods: {
-        getPage() {
+        getPage(curPage, PageSize) {
           this.listLoading = true
-          this.pageFun(this.pagination.curPage, { 'pageSize': this.pagination.pageSize }).then(response => {
+          this.pageFun(curPage, PageSize).then(response => {
             this.list = response.data.list
             this.pagination.curPage = response.data.pageNumber
             this.pagination.pageSize = response.data.pageSize
@@ -76,11 +88,11 @@
         },
         handleSizeChange(val) {
           this.pagination.pageSize = val
-          this.getPage()
+          this.getPage(this.pagination.curPage, this.pagination.pageSize)
         },
         handleCurrentChange(val) {
           this.pagination.curPage = val
-          this.getPage()
+          this.getPage(this.pagination.curPage, this.pagination.pageSize)
         },
         handleRowChange(row, event, column) {
           this.$refs.table.toggleRowSelection(row)
@@ -95,7 +107,7 @@
               this.delFun(id).then(response => {
                 if (response.code === 0) {
                   other.$message.success(response.msg)
-                  other.getPage()
+                  other.getPage(this.pagination.curPage, this.pagination.pageSize)
                 } else {
                   other.$message.info(response.msg)
                 }
