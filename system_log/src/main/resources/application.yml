@@ -22,6 +22,7 @@ spring:
 projectFilePath: E:\logrecord
 #logstore配置文件
 logStoreConfig: logstore.properties
+dataBase: log
 eureka:
   client:
     service-url:

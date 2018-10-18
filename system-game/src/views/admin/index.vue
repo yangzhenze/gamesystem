@@ -5,7 +5,7 @@
       <el-button class="filter-item" style="margin-left: 10px;" @click="delSConfirm" type="danger" icon="el-icon-delete">删除</el-button>
     </div>
 
-    <el-table ref="table" :data="list" v-loading.body="listLoading" @row-click="handleRowChange" @selection-change="selsChange"  element-loading-text="Loading" border fit highlight-current-row >
+    <el-table ref="table" :default-sort = "{prop: 'loginNum', order: 'descending'}" :data="list" v-loading.body="listLoading" @row-click="handleRowChange" @selection-change="selsChange"  element-loading-text="Loading" border fit highlight-current-row >
       <el-table-column type="selection">
       </el-table-column>
       <el-table-column align="center" label='ID' width="95">
@@ -23,7 +23,7 @@
           <span>{{scope.row.account}}</span>
         </template>
       </el-table-column>
-      <el-table-column label="登入次数" align="center">
+      <el-table-column label="登入次数" prop="loginNum" sortable align="center">
         <template slot-scope="scope">
           <span>{{scope.row.loginNum}}</span>
         </template>

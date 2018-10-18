@@ -1,31 +1,38 @@
 package com.system.controller;
 
-
-import com.system.service.Admin2Service;
+import com.system.bean.Admin;
+import com.system.common.Const;
+import com.system.service.LogService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+
+
+/**
+ * @author zzy
+ */
 @Api(description = "日志操作接口")
 @RestController
 @RequestMapping("/log")
 public class LogController {
-    protected static final Logger logger = LoggerFactory.getLogger(LogController.class);
 
     @Autowired
-    Admin2Service admin2Service;
+    private LogService logService;
 
-    @RequestMapping(value = "/{page}", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
-    @ApiOperation(value = "查看日志",notes = "查看日志")
-    public String findAll(@PathVariable Integer page, Integer pageSize,String service,String startDate,String endDate){
-        //return logService.getLog(page,pageSize,service,startDate,endDate);
-        return null;
+    @RequestMapping(value = "/login/{page}", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
+    @ApiOperation(value = "查看登录日志",notes = "查看登录日志")
+    public String getLogin(@PathVariable("page") int page, Integer pageSize,String service,String startDate,String endDate,String roleId,String roleName,String userId,String account,String sort){
+        return logService.findAll(page,pageSize,service,startDate,endDate,roleId,roleName,userId,account,Const.LOG_TYPE_ACTION,Const.EVENT_TYPE_ROLE_LOGOUT,sort);
+    }
+
+    @RequestMapping(value = "/createrole/{page}", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
+    @ApiOperation(value = "查看创角日志",notes = "查看创角日志")
+    public String getCreateRole(@PathVariable("page") int page, Integer pageSize,String service,String startDate,String endDate,String roleId,String roleName,String userId,String account,String sort){
+        return logService.findAll(page,pageSize,service,startDate,endDate,roleId,roleName,userId,account,Const.LOG_TYPE_ACTION,Const.EVENT_TYPE_CREATE_ROLE,sort);
     }
 
 }
