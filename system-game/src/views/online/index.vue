@@ -21,7 +21,7 @@
 </template>
 <script>
   import tableModel from '@/components/Table'
-  import { getLoginList } from '@/api/log'
+  import { getOnlineUserList } from '@/api/log'
   import { isEmpty, formatDate } from '@/utils'
 
   export default {
@@ -48,32 +48,12 @@
             sort: true
           },
           {
-            text: '角色ID',
-            value: 'roleid'
-          },
-          {
-            text: '角色名称',
-            value: 'rolename'
-          },
-          {
-            text: '等级',
-            value: 'params6'
-          },
-          {
             text: '平台',
-            value: 'params5'
+            value: 'params4'
           },
           {
             text: '操作系统',
-            value: 'params1'
-          },
-          {
-            text: 'ip地址1',
             value: 'params2'
-          },
-          {
-            text: '总金额',
-            value: 'params3'
           },
           {
             text: '服务器',
@@ -81,15 +61,11 @@
           },
           {
             text: 'PID',
-            value: 'params4'
+            value: 'params3'
           },
           {
-            text: '用户ID',
-            value: 'userid'
-          },
-          {
-            text: '帐号',
-            value: 'account'
+            text: '当前用户',
+            value: 'params1'
           }
         ]
       }
@@ -108,7 +84,7 @@
         params.account = this.params.account
         params.pageSize = pageSize
         return new Promise((resolve, reject) => {
-          getLoginList(curPage, params).then(response => {
+          getOnlineUserList(curPage, params).then(response => {
             resolve(response)
           }).catch(error => {
             reject(error)

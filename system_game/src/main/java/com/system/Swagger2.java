@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@Configuration
+//@Configuration
 public class Swagger2 extends WebMvcConfigurationSupport {
 
     /*@Value("${web.upload-path}")

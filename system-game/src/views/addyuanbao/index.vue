@@ -21,7 +21,7 @@
 </template>
 <script>
   import tableModel from '@/components/Table'
-  import { getLoginList } from '@/api/log'
+  import { getAddYuanBaoList } from '@/api/log'
   import { isEmpty, formatDate } from '@/utils'
 
   export default {
@@ -57,31 +57,35 @@
           },
           {
             text: '等级',
-            value: 'params6'
+            value: 'params7'
           },
           {
             text: '平台',
-            value: 'params5'
+            value: 'params4'
           },
           {
             text: '操作系统',
-            value: 'params1'
-          },
-          {
-            text: 'ip地址1',
-            value: 'params2'
+            value: 'params12'
           },
           {
             text: '总金额',
-            value: 'params3'
+            value: 'params14'
           },
           {
             text: '服务器',
             value: 'serverid'
           },
           {
-            text: 'PID',
-            value: 'params4'
+            text: '元宝类型',
+            value: 'params15'
+          },
+          {
+            text: '元宝路径',
+            value: 'params9'
+          },
+          {
+            text: '元宝',
+            value: 'params13'
           },
           {
             text: '用户ID',
@@ -108,7 +112,7 @@
         params.account = this.params.account
         params.pageSize = pageSize
         return new Promise((resolve, reject) => {
-          getLoginList(curPage, params).then(response => {
+          getAddYuanBaoList(curPage, params).then(response => {
             resolve(response)
           }).catch(error => {
             reject(error)

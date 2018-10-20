@@ -5,6 +5,10 @@ spring:
     #static-locations: classpath:/static/,classpath:/META-INF/resources,file:/Users/yangzhenze/Downloads/
   #mvc:
     #static-path-pattern: /static/**
+  boot:
+    admin:
+      client:
+        url: "http://localhost:9019"
 web:
   upload-path: file:/Users/yangzhenze/Downloads/images/
 eureka:
@@ -32,4 +36,8 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 3000
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

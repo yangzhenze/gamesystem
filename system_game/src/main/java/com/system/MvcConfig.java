@@ -14,7 +14,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
  * @author zzy
  * @Date 2018/8/26 下午4:38
  */
-@Configuration
+//@Configuration
 public class MvcConfig extends WebMvcConfigurationSupport {
     @Value("${web.upload-path}")
     private String filePath;
@@ -26,7 +26,7 @@ public class MvcConfig extends WebMvcConfigurationSupport {
      */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/").addResourceLocations(filePath);
+        //registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/").addResourceLocations(filePath);
         registry.addResourceHandler("swagger-ui.html")
                 .addResourceLocations("classpath:/META-INF/resources/");
         registry.addResourceHandler("/webjars/**")

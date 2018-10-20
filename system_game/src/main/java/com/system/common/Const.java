@@ -28,22 +28,6 @@ public class Const {
 	public static final int PAGE_SIZE = 10;
 
 
-	/*是否*/
-	public final static int BOOLEAN_TYPE = 1001000;
-	public final static int BOOLEAN_TYPE_TRUE = 1001001;
-	public final static int BOOLEAN_TYPE_FALSE = 1001002;
-
-	/*程序分类*/
-	public final static int PROGRAM_TYPE = 1002000;
-	public final static int PROGRAM_TYPE_SERVER = 1002001;
-	public final static int PROGRAM_TYPE_CLIENT = 1002002;
-
-	/*设备分类*/
-	public final static int DEVICE_TYPE = 1003000;
-	public final static int DEVICE_TYPE_IPHONE = 1003001;
-	public final static int DEVICE_TYPE_ANDROID = 1003002;
-	public final static int DEVICE_TYPE_LINUX = 1003003;
-	public final static int DEVICE_TYPE_WINDOWS = 1003004;
 
 	/*日志分类*/
 	public final static int LOG_TYPE = 1004000;
@@ -67,12 +51,17 @@ public class Const {
 	public final static int EVENT_TYPE_ADD_YUANBAO = 1005012;
 	public final static int EVENT_TYPE_COST_YUANBAO = 1005013;
 	public final static int EVENT_TYPE_SHOP_TRADE = 1005014;
-	/*事件类型-客户端专属*/
-	public final static int EVENT_TYPE_CLIENT_START = 1005501;
-
-	/*定时任务状态*/
-	public final static int JOB_STATUS_TYPE = 2001000;
-	public final static int JOB_STATUS_TYPE_NEW = 2001001;
-	public final static int JOB_STATUS_TYPE_READY = 2001002;
-	public final static int JOB_STATUS_TYPE_COMPLETE = 2001003;
+	public final static int EVENT_TYPE_GAIN_ITEM = 1005015;
+	public final static int EVENT_TYPE_LOSE_ITEM = 1005016;
+	public final static int EVENT_TYPE_CHAR_DATA = 1005017;
+	public final static int EVENT_TYPE_START_TASK = 1005018;
+	public final static int EVENT_TYPE_END_TASK = 1005019;
+	public final static int EVENT_TYPE_START_ARENA = 1005020;
+	public final static int EVENT_TYPE_END_ARENA = 1005021;
+	public final static int EVENT_TYPE_CHAT_LOG = 1005022;
+	public final static int EVENT_TYPE_RANK = 1005023;
+	public final static int EVENT_TYPE_JIAZU_RANK = 1005024;
+	public final static int EVENT_TYPE_EXCHANGE = 1005025;
+	public final static int EVENT_TYPE_RECRUIT = 1005026;
+	public final static int EVENT_TYPE_WELFARE= 1005027;
 }

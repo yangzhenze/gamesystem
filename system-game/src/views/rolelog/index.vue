@@ -43,7 +43,7 @@
         },
         columns: [
           {
-            text: '登录时间',
+            text: '记录时间',
             value: 'logtime',
             sort: true
           },
@@ -54,6 +54,22 @@
           {
             text: '角色名称',
             value: 'rolename'
+          },
+          {
+            text: '职业',
+            value: 'params1'
+          },
+          {
+            text: '平台',
+            value: 'params5'
+          },
+          {
+            text: '操作系统',
+            value: 'params2'
+          },
+          {
+            text: 'MAC地址',
+            value: 'params4'
           },
           {
             text: '服务器',

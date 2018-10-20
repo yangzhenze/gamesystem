@@ -21,7 +21,7 @@
 </template>
 <script>
   import tableModel from '@/components/Table'
-  import { getLoginList } from '@/api/log'
+  import { getStartTaskList } from '@/api/log'
   import { isEmpty, formatDate } from '@/utils'
 
   export default {
@@ -56,32 +56,16 @@
             value: 'rolename'
           },
           {
-            text: '等级',
-            value: 'params6'
-          },
-          {
-            text: '平台',
-            value: 'params5'
+            text: '服务器',
+            value: 'serverid'
           },
           {
             text: '操作系统',
             value: 'params1'
           },
           {
-            text: 'ip地址1',
-            value: 'params2'
-          },
-          {
-            text: '总金额',
+            text: '平台',
             value: 'params3'
-          },
-          {
-            text: '服务器',
-            value: 'serverid'
-          },
-          {
-            text: 'PID',
-            value: 'params4'
           },
           {
             text: '用户ID',
@@ -90,6 +74,18 @@
           {
             text: '帐号',
             value: 'account'
+          },
+          {
+            text: '任务类型ID',
+            value: 'params4'
+          },
+          {
+            text: '任务ID',
+            value: 'params6'
+          },
+          {
+            text: 'fignt',
+            value: 'params5'
           }
         ]
       }
@@ -108,7 +104,7 @@
         params.account = this.params.account
         params.pageSize = pageSize
         return new Promise((resolve, reject) => {
-          getLoginList(curPage, params).then(response => {
+          getStartTaskList(curPage, params).then(response => {
             resolve(response)
           }).catch(error => {
             reject(error)

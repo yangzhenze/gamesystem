@@ -23,3 +23,11 @@ eureka:
       defaultZone: http://localhost:9011/eureka/
 server:
   port: 9012
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  #<2>
+  endpoint:
+    health:
+      show-details: ALWAYS

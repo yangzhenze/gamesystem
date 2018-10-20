@@ -21,7 +21,7 @@
 </template>
 <script>
   import tableModel from '@/components/Table'
-  import { getLoginList } from '@/api/log'
+  import { getJiaZuRankList } from '@/api/log'
   import { isEmpty, formatDate } from '@/utils'
 
   export default {
@@ -56,40 +56,40 @@
             value: 'rolename'
           },
           {
-            text: '等级',
-            value: 'params6'
-          },
-          {
-            text: '平台',
-            value: 'params5'
-          },
-          {
-            text: '操作系统',
-            value: 'params1'
-          },
-          {
-            text: 'ip地址1',
-            value: 'params2'
-          },
-          {
-            text: '总金额',
-            value: 'params3'
-          },
-          {
             text: '服务器',
             value: 'serverid'
           },
           {
-            text: 'PID',
-            value: 'params4'
+            text: '家族ID',
+            value: 'params6'
           },
           {
-            text: '用户ID',
-            value: 'userid'
+            text: '家族名称',
+            value: 'params2'
           },
           {
-            text: '帐号',
-            value: 'account'
+            text: 'leader角色id',
+            value: 'params8'
+          },
+          {
+            text: 'leader角色名称',
+            value: 'params3'
+          },
+          {
+            text: '家族等级',
+            value: 'params5'
+          },
+          {
+            text: '家族成员',
+            value: 'params1'
+          },
+          {
+            text: '任务',
+            value: 'params1'
+          },
+          {
+            text: '得分',
+            value: 'params7'
           }
         ]
       }
@@ -108,7 +108,7 @@
         params.account = this.params.account
         params.pageSize = pageSize
         return new Promise((resolve, reject) => {
-          getLoginList(curPage, params).then(response => {
+          getJiaZuRankList(curPage, params).then(response => {
             resolve(response)
           }).catch(error => {
             reject(error)

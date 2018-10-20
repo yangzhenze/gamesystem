@@ -21,7 +21,7 @@
 </template>
 <script>
   import tableModel from '@/components/Table'
-  import { getLoginList } from '@/api/log'
+  import { getLevelUpList } from '@/api/log'
   import { isEmpty, formatDate } from '@/utils'
 
   export default {
@@ -60,28 +60,28 @@
             value: 'params6'
           },
           {
-            text: '平台',
+            text: '升级时间',
             value: 'params5'
+          },
+          {
+            text: '平台',
+            value: 'params4'
           },
           {
             text: '操作系统',
             value: 'params1'
           },
           {
-            text: 'ip地址1',
-            value: 'params2'
-          },
-          {
-            text: '总金额',
-            value: 'params3'
-          },
-          {
             text: '服务器',
             value: 'serverid'
           },
           {
+            text: '总金额',
+            value: 'params2'
+          },
+          {
             text: 'PID',
-            value: 'params4'
+            value: 'params3'
           },
           {
             text: '用户ID',
@@ -108,7 +108,7 @@
         params.account = this.params.account
         params.pageSize = pageSize
         return new Promise((resolve, reject) => {
-          getLoginList(curPage, params).then(response => {
+          getLevelUpList(curPage, params).then(response => {
             resolve(response)
           }).catch(error => {
             reject(error)

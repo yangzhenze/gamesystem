@@ -21,7 +21,7 @@
 </template>
 <script>
   import tableModel from '@/components/Table'
-  import { getLoginList } from '@/api/log'
+  import { getAddCashList } from '@/api/log'
   import { isEmpty, formatDate } from '@/utils'
 
   export default {
@@ -57,31 +57,35 @@
           },
           {
             text: '等级',
-            value: 'params6'
+            value: 'params3'
           },
           {
             text: '平台',
-            value: 'params5'
-          },
-          {
-            text: '操作系统',
-            value: 'params1'
-          },
-          {
-            text: 'ip地址1',
             value: 'params2'
           },
           {
+            text: '操作系统',
+            value: 'params6'
+          },
+          {
             text: '总金额',
-            value: 'params3'
+            value: 'params8'
           },
           {
             text: '服务器',
             value: 'serverid'
           },
           {
-            text: 'PID',
-            value: 'params4'
+            text: '元宝类型',
+            value: 'serverid'
+          },
+          {
+            text: '元宝路径',
+            value: 'serverid'
+          },
+          {
+            text: '元宝',
+            value: 'serverid'
           },
           {
             text: '用户ID',
@@ -108,7 +112,7 @@
         params.account = this.params.account
         params.pageSize = pageSize
         return new Promise((resolve, reject) => {
-          getLoginList(curPage, params).then(response => {
+          getAddCashList(curPage, params).then(response => {
             resolve(response)
           }).catch(error => {
             reject(error)

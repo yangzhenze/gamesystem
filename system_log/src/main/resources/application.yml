@@ -23,6 +23,14 @@ projectFilePath: E:\logrecord
 #logstore配置文件
 logStoreConfig: logstore.properties
 dataBase: log
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  #<2>
+  endpoint:
+    health:
+      show-details: ALWAYS
 eureka:
   client:
     service-url:
