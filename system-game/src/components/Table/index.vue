@@ -16,7 +16,7 @@
       </template>
     </el-table-column>
   </el-table>
-  <div class="pagination-container">
+  <div v-if="paging" class="pagination-container">
     <el-pagination background @size-change="handleSizeChange" @current-change="handleCurrentChange" :current-page="pagination.curPage" :page-sizes="[10,20,30,50]" :page-size="pagination.pageSize" layout="total, sizes, prev, pager, next, jumper" :total="pagination.totalRow">
     </el-pagination>
   </div>
@@ -24,6 +24,7 @@
 </template>
 
 <script>
+    import { getDicName } from '@/api/dictionary'
     export default {
       name: 'tableModel',
       props: {
@@ -54,6 +55,10 @@
         controlColumn: { // 操作列
           type: Boolean,
           default: false
+        },
+        paging: {
+          type: Boolean,
+          default: true
         }
       },
       data() {
@@ -79,11 +84,57 @@
         getPage(curPage, PageSize) {
           this.listLoading = true
           this.pageFun(curPage, PageSize).then(response => {
-            this.list = response.data.list
-            this.pagination.curPage = response.data.pageNumber
-            this.pagination.pageSize = response.data.pageSize
-            this.pagination.totalRow = response.data.totalRow
-            this.listLoading = false
+            const dicColumns = []
+            this.columns.forEach(column => {
+              if (column.dicCode !== undefined && column.dicCode !== '') {
+                const dicColumn = {}
+                dicColumn.column = column.value
+                dicColumn.code = column.dicCode
+                dicColumns.push(dicColumn)
+              }
+            })
+            if (dicColumns.length > 0) {
+              const tempData = JSON.parse(JSON.stringify(response.data.list))
+              this.setDicValueForList(tempData, dicColumns).then(() => {
+                this.list = tempData
+                this.pagination.curPage = response.data.pageNumber
+                this.pagination.pageSize = response.data.pageSize
+                this.pagination.totalRow = response.data.totalRow
+                this.listLoading = false
+              })
+            } else {
+              this.list = response.data.list
+              this.pagination.curPage = response.data.pageNumber
+              this.pagination.pageSize = response.data.pageSize
+              this.pagination.totalRow = response.data.totalRow
+              this.listLoading = false
+            }
+
+            /* this.list.forEach(l => {
+              dicColumns.forEach(v => {
+                this.getDicValue(v.code, l[v.column]).then(response => {
+                  l[v.column] = response.data
+                })
+              })
+            }) */
+          })
+        },
+        setDicValueForList: async function(dataList, dicColumns) { // 同步设置字典
+          for (const data of dataList) {
+            for (const columns of dicColumns) {
+              await this.getDicValue(columns.code, data[columns.column]).then(response => {
+                data[columns.column] = response.data
+              })
+            }
+          }
+        },
+        getDicValue(code, value) {
+          return new Promise((resolve, reject) => {
+            getDicName({ code: code, value: value }).then(response => {
+              resolve(response)
+            }).catch(error => {
+              reject(error)
+            })
           })
         },
         handleSizeChange(val) {

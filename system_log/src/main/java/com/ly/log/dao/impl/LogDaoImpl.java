@@ -17,10 +17,7 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
+import java.util.*;
 
 @Component
 public class LogDaoImpl implements ILogDao {
@@ -50,7 +47,7 @@ public class LogDaoImpl implements ILogDao {
                 List<Map<String, Object>> tables = null;
 
                 if(!StrUtil.isBlank(service)){
-                    tables = this.getTables("%_"+service+"_%");
+                    tables = this.getTables("%_"+service+"_");
                 }else {
                     tables = this.getTables(null);
                 }
@@ -164,6 +161,118 @@ public class LogDaoImpl implements ILogDao {
         return pageData;
 
 
+    }
+
+    @Override
+    public List<Map<String, Object>> getPersonCount(String service, String startDate, String endDate, String roleId, String roleName, String userId, String account, Integer logType, Integer eventType) {
+        StringBuffer sql = new StringBuffer("select l.logname,count(*) as 'logcount' from ");
+        StringBuffer tableSql = new StringBuffer("");
+        StringBuffer params = new StringBuffer();
+        List<Map<String, Object>> data = null;
+
+        try{
+            if(StrUtil.isBlank(startDate) && StrUtil.isBlank(endDate)){
+                List<Map<String, Object>> tables = null;
+
+                if(!StrUtil.isBlank(service)){
+                    tables = this.getTables("%_"+service+"_");
+                }else {
+                    tables = this.getTables(null);
+                }
+
+                for(int i = 0; i < tables.size(); i++){
+                    if(i == 0){
+                        tableSql.append(" (select * from `"+tables.get(i).get("TABLE_NAME")+"`");
+                        if(null != logType){
+                            params.append(whereSql()).append( "log_type = "+logType);
+                        }
+
+                        if(null != eventType){
+                            params.append(whereSql()).append( " event_type = "+eventType);
+                        }
+                        restWhere();
+                    }else{
+                        tableSql.append(" union all select * from `"+tables.get(i).get("TABLE_NAME")+"` ");
+                    }
+
+                    tableSql.append(params);
+
+                }
+
+
+
+            }else if(!StrUtil.isBlank(startDate) && !StrUtil.isBlank(endDate)){
+                int day = DateUtil.getIntervalDays(DateUtil.stringToDate(endDate,"yyyy-MM-dd"),DateUtil.stringToDate(startDate,"yyyy-MM-dd"));
+
+                boolean selectFlag = true;
+
+                for(int i=0;i<=day;i++){
+                    Date date = DateUtil.dateAdd(3,i,DateUtil.stringToDate(startDate,"yyyy-MM-dd"));
+                    Object [] keys = null;
+
+                    List<Map<String, Object>> tables = null;
+
+                    if(!StrUtil.isBlank(service)){
+                        tables = this.getTables("%_"+service+"_"+simpleDateFormat.format(date));
+                    }else {
+                        tables = this.getTables("%"+simpleDateFormat.format(date));
+                    }
+
+                    for(int j = 0;j < tables.size();j++){
+                        if(selectFlag){
+                            tableSql.append(" (select * from  `"+tables.get(j).get("TABLE_NAME")+"`");
+
+                            if(null != logType){
+                                params.append(whereSql()).append( "log_type = "+logType);
+                            }
+
+                            if(null != eventType){
+                                params.append(whereSql()).append( " event_type = "+eventType);
+                            }
+                            restWhere();
+                            selectFlag = false;
+                        }else{
+                            tableSql.append(" union all select * from `"+tables.get(j).get("TABLE_NAME")+"`");
+                        }
+
+                        tableSql.append(params);
+                    }
+
+
+                }
+            }
+
+            tableSql.append(" ) l");
+
+            if(!StrUtil.isBlank(startDate) && !StrUtil.isBlank(endDate)){
+                tableSql.append(whereSql()).append(" l.logtime > ").append("'"+startDate+"'").append(" and l.logtime < ").append("'"+endDate+"'");
+
+            }
+
+            if(!StrUtil.isBlank(userId)){
+                tableSql.append(whereSql()).append(" l.userid = '"+userId+"'");
+            }
+
+            if(!StrUtil.isBlank(account)){
+                tableSql.append(whereSql()).append(" l.account = '"+account+"'");
+            }
+
+            if(!StrUtil.isBlank(roleId)){
+                tableSql.append(whereSql()).append(" l.roleid = '"+roleId+"'");
+            }
+
+            if(!StrUtil.isBlank(roleName)){
+                tableSql.append(whereSql()).append(" l.rolename like '%"+roleName+"'");
+            }
+
+            restWhere();
+            sql.append(tableSql).append(" GROUP BY l.logname");
+            data = jdbcTemplate.queryForList(sql.toString());
+        }catch (Exception e){
+            return new ArrayList<>();
+        }
+
+        return data;
     }
 
     private String whereSql(){

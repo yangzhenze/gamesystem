@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class LogServiceImpl implements ILogService {
@@ -18,5 +19,10 @@ public class LogServiceImpl implements ILogService {
     @Override
     public Page<Log> getLog(int page, int pageSize, String service, String startDate, String endDate,String roleId,String roleName,String userId,String account,Integer logType,Integer eventType,String sort) {
         return logDao.getLog(page,pageSize,service,startDate,endDate,roleId,roleName,userId,account,logType,eventType,sort);
+    }
+
+    @Override
+    public List<Map<String, Object>> getPersonCount(String service, String startDate, String endDate, String roleId, String roleName, String userId, String account, Integer logType, Integer eventType) {
+        return logDao.getPersonCount(service,startDate,endDate,roleId,roleName,userId,account,logType,eventType);
     }
 }

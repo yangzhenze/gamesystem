@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    <div class="filter-container">
+    <div  v-if="search" class="filter-container">
       <el-input placeholder="角色ID" v-model="params.roleId" style="width: 200px;" class="filter-item"/>
       <el-input placeholder="角色名称" v-model="params.roleName" style="width: 200px;" class="filter-item"/>
       <el-input placeholder="用户ID" v-model="params.userId" style="width: 200px;" class="filter-item"/>
@@ -25,6 +25,26 @@
   import { isEmpty, formatDate } from '@/utils'
 
   export default {
+    name: 'loseitem',
+    props: {
+      search: {
+        type: Boolean,
+        default: true
+      },
+      params: {
+        type: Object,
+        default: {}
+      },
+      isLoad: {
+        type: Boolean,
+        defalut: false
+      }
+    },
+    mounted() {
+      if (this.isLoad) {
+        this.handleSearch()
+      }
+    },
     components: { tableModel },
     data() {
       return {
@@ -77,22 +97,24 @@
           },
           {
             text: '操作系统',
-            value: 'params2'
+            value: 'params2',
+            dicCode: 'os'
           },
           {
-            text: 'itemtype',
-            value: 'params7'
+            text: '物品类型',
+            value: 'params7',
+            dicCode: 'itemtype'
           },
           {
-            text: 'itemid',
+            text: '物品ID',
             value: 'params6'
           },
           {
-            text: 'itemcount',
+            text: '物品数量',
             value: 'params3'
           },
           {
-            text: 'itempath',
+            text: '物品路径',
             value: 'params1'
           }
         ]

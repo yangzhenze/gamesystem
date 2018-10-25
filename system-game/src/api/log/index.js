@@ -177,3 +177,30 @@ export function getWelfareList(page, params) {
   })
 }
 
+// 查看个人日志
+export function getPersonList(params) {
+  return request({
+    url: '/api/log/person',
+    method: 'get',
+    params
+  })
+}
+
+// 开启副本
+export function getStartInstanceList(page, params) {
+  return request({
+    url: '/api/log/startinstance/' + page,
+    method: 'get',
+    params
+  })
+}
+
+// 结束副本
+export function getEndInstanceList(page, params) {
+  return request({
+    url: '/api/log/startinstance/' + page,
+    method: 'get',
+    params
+  })
+}
+

@@ -12,4 +12,8 @@ import org.springframework.web.bind.annotation.*;
 public interface LogService {
     @RequestMapping(value = "/log/{page}", method = RequestMethod.GET)
     String findAll(@PathVariable("page") Integer page, @RequestParam("pageSize") Integer pageSize,@RequestParam("service") String service,@RequestParam("startDate") String startDate,@RequestParam("endDate") String endDate,@RequestParam("roleId") String roleId,@RequestParam("roleName") String roleName,@RequestParam("userId") String userId,@RequestParam("account") String account,@RequestParam("logType") Integer logType,@RequestParam("eventType") Integer eventType,@RequestParam("sort") String sort);
+
+
+    @RequestMapping(value = "/log/person", method = RequestMethod.GET)
+    String findPerson(@RequestParam("service") String service,@RequestParam("startDate") String startDate,@RequestParam("endDate") String endDate,@RequestParam("roleId") String roleId,@RequestParam("roleName") String roleName,@RequestParam("userId") String userId,@RequestParam("account") String account,@RequestParam("logType") Integer logType,@RequestParam("eventType") Integer eventType);
 }

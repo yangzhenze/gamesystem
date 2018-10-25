@@ -65,3 +65,12 @@ export function delDic(params) {
     params
   })
 }
+
+// 删除字典
+export function getDicName(params) {
+  return request({
+    url: '/api/dic/name',
+    method: 'get',
+    params
+  })
+}

@@ -68,6 +68,18 @@ public class DictionaryController {
         return dictionaryService.checkCode(code, id);
     }
 
+
+    @RequestMapping(value = "/name", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
+    @ApiOperation(value = "获取名称列表（值）",notes = "获取名称列表（值）")
+    @ApiImplicitParams({
+            @ApiImplicitParam(paramType = "query", dataType = "String", name = "code", value = "code标识", required = true),
+            @ApiImplicitParam(paramType = "query", dataType = "String", name = "value", value = "值", required = true)
+    })
+    public String getName(String code,String value){
+        return dictionaryService.getName(code,value);
+    }
+
+
     @RequestMapping(value = "/check/value", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
     @ApiOperation(value = "检查value是否可用",notes = "检查value是否可用")
     @ApiImplicitParams({

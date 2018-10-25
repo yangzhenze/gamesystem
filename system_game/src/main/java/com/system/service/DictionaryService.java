@@ -33,4 +33,7 @@ public interface DictionaryService {
 
     @GetMapping("/dic/check/value")
     String checkValue(@RequestParam("value") String value,@RequestParam("parentId") Integer parentId,@RequestParam("id") Integer id);
+
+    @GetMapping(value = "/dic/name")
+    public String getName(@RequestParam("code") String code,@RequestParam("value") String value);
 }

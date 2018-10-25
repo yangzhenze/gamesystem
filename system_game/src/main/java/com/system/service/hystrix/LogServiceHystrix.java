@@ -15,4 +15,9 @@ public class LogServiceHystrix implements LogService {
     public String findAll(Integer page, Integer pageSize, String service, String startDate, String endDate, String roleId, String roleName, String userId, String account, Integer logType, Integer eventType, String sort) {
         return null;
     }
+
+    @Override
+    public String findPerson(String service, String startDate, String endDate, String roleId, String roleName, String userId, String account, Integer logType, Integer eventType) {
+        return null;
+    }
 }

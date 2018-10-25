@@ -155,4 +155,22 @@ public class LogController {
         return logService.findAll(page,pageSize,service,startDate,endDate,roleId,roleName,userId,account,Const.LOG_TYPE_PROGRAM,Const.EVENT_TYPE_WELFARE,sort);
     }
 
+    @RequestMapping(value = "/startinstance/{page}", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
+    @ApiOperation(value = "查看开户副本日志",notes = "查看开户副本日志")
+    public String getStartInstance(@PathVariable("page") int page, Integer pageSize,String service,String startDate,String endDate,String roleId,String roleName,String userId,String account,String sort){
+        return logService.findAll(page,pageSize,service,startDate,endDate,roleId,roleName,userId,account,Const.LOG_TYPE_PROGRAM,Const.EVENT_START_INSTANCE,sort);
+    }
+
+    @RequestMapping(value = "/endinstance/{page}", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
+    @ApiOperation(value = "查看结束副本日志",notes = "查看结束副本日志")
+    public String getEndInstance(@PathVariable("page") int page, Integer pageSize,String service,String startDate,String endDate,String roleId,String roleName,String userId,String account,String sort){
+        return logService.findAll(page,pageSize,service,startDate,endDate,roleId,roleName,userId,account,Const.LOG_TYPE_PROGRAM,Const.EVENT_END_INSTANCE,sort);
+    }
+
+    @RequestMapping(value = "/person", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
+    @ApiOperation(value = "查看个人日志",notes = "查看个人日志")
+    public String getPerson(String service,String startDate,String endDate,String roleId,String roleName,String userId,String account){
+        return logService.findPerson(service,startDate,endDate,roleId,roleName,userId,account,null,null);
+    }
+
 }

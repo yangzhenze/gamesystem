@@ -4,10 +4,10 @@
     <el-card shadow="hover" class="box-card">
       <div class="component-item user-info">
         <div>
-          <pan-thumb width="100px" height="100px" :image="userInfo.headPortrait">
-            {{userInfo.name}}
-          </pan-thumb>
-        </div>
+        <pan-thumb width="100px" height="100px" :image="userInfo.headPortrait">
+          {{userInfo.name}}
+        </pan-thumb>
+      </div>
         <div class="user-info-cont">
           <div class="user-info-name">{{userInfo.name}}</div>
           <div>{{userInfo.name}}</div>

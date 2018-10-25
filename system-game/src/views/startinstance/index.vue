@@ -21,11 +21,11 @@
 </template>
 <script>
   import tableModel from '@/components/Table'
-  import { getRoleLogoutList } from '@/api/log'
+  import { getStartInstanceList } from '@/api/log'
   import { isEmpty, formatDate } from '@/utils'
 
   export default {
-    name: 'rolelogout',
+    name: 'startinstance',
     props: {
       search: {
         type: Boolean,
@@ -76,49 +76,8 @@
             value: 'rolename'
           },
           {
-            text: '等级',
-            value: 'params3'
-          },
-          {
-            text: '平台',
-            value: 'params2'
-          },
-          {
-            text: '操作系统',
-            value: 'params6',
-            dicCode: 'os'
-          },
-          {
-            text: 'ip地址',
-            value: 'params2'
-          },
-          {
-            text: '总金额',
-            value: 'params8'
-          },
-          {
-            text: '剩余虚拟币',
-            value: 'params4'
-          },
-          {
-            text: '剩余元宝',
-            value: 'params5'
-          },
-          {
-            text: '绑定剩余元宝',
-            value: 'params7'
-          },
-          {
-            text: '在线时长（秒）',
-            value: 'params9'
-          },
-          {
             text: '服务器',
             value: 'serverid'
-          },
-          {
-            text: 'PID',
-            value: 'params1'
           },
           {
             text: '用户ID',
@@ -127,6 +86,27 @@
           {
             text: '帐号',
             value: 'account'
+          },
+          {
+            text: '平台',
+            value: 'params3'
+          },
+          {
+            text: '操作系统',
+            value: 'params1',
+            dicCode: 'os'
+          },
+          {
+            text: '战斗',
+            value: 'params6'
+          },
+          {
+            text: 'chapterID',
+            value: 'params4'
+          },
+          {
+            text: 'ectypeID',
+            value: 'params5'
           }
         ]
       }
@@ -145,7 +125,7 @@
         params.account = this.params.account
         params.pageSize = pageSize
         return new Promise((resolve, reject) => {
-          getRoleLogoutList(curPage, params).then(response => {
+          getStartInstanceList(curPage, params).then(response => {
             resolve(response)
           }).catch(error => {
             reject(error)

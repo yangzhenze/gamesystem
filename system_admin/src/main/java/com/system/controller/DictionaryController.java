@@ -36,6 +36,19 @@ public class DictionaryController {
         return Ret.msgSuccess(dictionaryService.getPage(page,pageSize));
     }
 
+    @RequestMapping(value = "/name", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
+    @ApiOperation(value = "获取名称列表（值）",notes = "获取名称列表（值）")
+    @ApiImplicitParams({
+            @ApiImplicitParam(paramType = "query", dataType = "String", name = "code", value = "code标识", required = true),
+            @ApiImplicitParam(paramType = "query", dataType = "String", name = "value", value = "值", required = true)
+    })
+    public String getName(String code,String value){
+        if(null == code || null == value){
+            return Ret.msgSetVal("参数code和value不能为空");
+        }
+        return Ret.msgSuccess(dictionaryService.getName(code,value));
+    }
+
     @RequestMapping(value = "", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
     @ApiOperation(value = "添加字典",notes = "添加字典")
     public String add(@RequestBody Dictionary dictionary){
@@ -112,7 +125,7 @@ public class DictionaryController {
             return Ret.msgSuccess(code+"已存在",result);
         }
         result.put("result",true);
-        return Ret.msgSuccess();
+        return Ret.msgSuccess(result);
     }
 
     @RequestMapping(value = "/check/value", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")

@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    <div class="filter-container">
+    <div  v-if="search" class="filter-container">
       <el-input placeholder="角色ID" v-model="params.roleId" style="width: 200px;" class="filter-item"/>
       <el-input placeholder="角色名称" v-model="params.roleName" style="width: 200px;" class="filter-item"/>
       <el-input placeholder="用户ID" v-model="params.userId" style="width: 200px;" class="filter-item"/>
@@ -25,6 +25,28 @@
   import { isEmpty, formatDate } from '@/utils'
 
   export default {
+    name: 'createrole',
+    props: {
+      search: {
+        type: Boolean,
+        default: true
+      },
+      params: {
+        type: Object,
+        default: () => {
+          return {}
+        }
+      },
+      isLoad: {
+        type: Boolean,
+        defalut: false
+      }
+    },
+    mounted() {
+      if (this.isLoad) {
+        this.handleSearch()
+      }
+    },
     components: { tableModel },
     data() {
       return {
@@ -33,14 +55,6 @@
           serach: '搜索'
         },
         importanceOptions: [1, 2, 3],
-        params: {
-          service: '',
-          date: null,
-          roleId: '',
-          roleName: '',
-          userId: '',
-          account: ''
-        },
         columns: [
           {
             text: '记录时间',
@@ -65,7 +79,8 @@
           },
           {
             text: '操作系统',
-            value: 'params2'
+            value: 'params2',
+            dicCode: 'os'
           },
           {
             text: 'MAC地址',

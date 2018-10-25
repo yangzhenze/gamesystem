@@ -44,4 +44,9 @@ public class DictionaryServiceHystrix implements DictionaryService{
     public String checkValue(String value, Integer parentId, Integer id) {
         return null;
     }
+
+    @Override
+    public String getName(String code, String value) {
+        return null;
+    }
 }

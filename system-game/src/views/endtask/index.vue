@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    <div class="filter-container">
+    <div  v-if="search" class="filter-container">
       <el-input placeholder="角色ID" v-model="params.roleId" style="width: 200px;" class="filter-item"/>
       <el-input placeholder="角色名称" v-model="params.roleName" style="width: 200px;" class="filter-item"/>
       <el-input placeholder="用户ID" v-model="params.userId" style="width: 200px;" class="filter-item"/>
@@ -25,6 +25,26 @@
   import { isEmpty, formatDate } from '@/utils'
 
   export default {
+    name: 'endtask',
+    props: {
+      search: {
+        type: Boolean,
+        default: true
+      },
+      params: {
+        type: Object,
+        default: {}
+      },
+      isLoad: {
+        type: Boolean,
+        defalut: false
+      }
+    },
+    mounted() {
+      if (this.isLoad) {
+        this.handleSearch()
+      }
+    },
     components: { tableModel },
     data() {
       return {
@@ -60,12 +80,42 @@
             value: 'serverid'
           },
           {
+            text: '操作系统',
+            value: 'params1',
+            dicCode: 'os'
+          },
+          {
+            text: '平台',
+            value: 'params3'
+          },
+          {
             text: '用户ID',
             value: 'userid'
           },
           {
             text: '帐号',
             value: 'account'
+          },
+          {
+            text: '任务类型ID',
+            value: 'params6'
+          },
+          {
+            text: '任务ID',
+            value: 'params8'
+          },
+          {
+            text: '战斗',
+            value: 'params7'
+          },
+          {
+            text: '时间',
+            value: 'params5'
+          },
+          {
+            text: '结果',
+            value: 'params4',
+            dicCode: 'task_result'
           }
         ]
       }

@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    <div class="filter-container">
+    <div  v-if="search" class="filter-container">
       <el-input placeholder="角色ID" v-model="params.roleId" style="width: 200px;" class="filter-item"/>
       <el-input placeholder="角色名称" v-model="params.roleName" style="width: 200px;" class="filter-item"/>
       <el-input placeholder="用户ID" v-model="params.userId" style="width: 200px;" class="filter-item"/>
@@ -25,6 +25,26 @@
   import { isEmpty, formatDate } from '@/utils'
 
   export default {
+    name: 'starttask',
+    props: {
+      search: {
+        type: Boolean,
+        default: true
+      },
+      params: {
+        type: Object,
+        default: {}
+      },
+      isLoad: {
+        type: Boolean,
+        defalut: false
+      }
+    },
+    mounted() {
+      if (this.isLoad) {
+        this.handleSearch()
+      }
+    },
     components: { tableModel },
     data() {
       return {
@@ -61,7 +81,8 @@
           },
           {
             text: '操作系统',
-            value: 'params1'
+            value: 'params1',
+            dicCode: 'os'
           },
           {
             text: '平台',
@@ -84,7 +105,7 @@
             value: 'params6'
           },
           {
-            text: 'fignt',
+            text: '战斗',
             value: 'params5'
           }
         ]

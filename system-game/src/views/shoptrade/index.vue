@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    <div class="filter-container">
+    <div  v-if="search" class="filter-container">
       <el-input placeholder="角色ID" v-model="params.roleId" style="width: 200px;" class="filter-item"/>
       <el-input placeholder="角色名称" v-model="params.roleName" style="width: 200px;" class="filter-item"/>
       <el-input placeholder="用户ID" v-model="params.userId" style="width: 200px;" class="filter-item"/>
@@ -25,6 +25,26 @@
   import { isEmpty, formatDate } from '@/utils'
 
   export default {
+    name: 'shoptrade',
+    props: {
+      search: {
+        type: Boolean,
+        default: true
+      },
+      params: {
+        type: Object,
+        default: {}
+      },
+      isLoad: {
+        type: Boolean,
+        defalut: false
+      }
+    },
+    mounted() {
+      if (this.isLoad) {
+        this.handleSearch()
+      }
+    },
     components: { tableModel },
     data() {
       return {
@@ -61,7 +81,8 @@
           },
           {
             text: '操作系统',
-            value: 'params1'
+            value: 'params6',
+            dicCode: 'os'
           },
           {
             text: '平台',
@@ -76,24 +97,34 @@
             value: 'account'
           },
           {
-            text: '任务类型ID',
-            value: 'params6'
+            text: '等级',
+            value: 'params5'
           },
           {
-            text: '任务ID',
-            value: 'params8'
+            text: '物品类型',
+            value: 'params9',
+            dicCode: 'itemtype'
           },
           {
-            text: 'fignt',
-            value: 'params7'
-          },
-          {
-            text: '结果',
+            text: '物品ID',
             value: 'params4'
           },
           {
-            text: '结束时间',
-            value: 'params5'
+            text: '物品数量',
+            value: 'params1'
+          },
+          {
+            text: '元宝类型',
+            value: 'params10',
+            dicCode: 'yuanbaotype'
+          },
+          {
+            text: '元宝',
+            value: 'params7'
+          },
+          {
+            text: '总金额',
+            value: 'params8'
           }
         ]
       }

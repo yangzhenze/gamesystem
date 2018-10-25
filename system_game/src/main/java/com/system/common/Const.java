@@ -64,4 +64,6 @@ public class Const {
 	public final static int EVENT_TYPE_EXCHANGE = 1005025;
 	public final static int EVENT_TYPE_RECRUIT = 1005026;
 	public final static int EVENT_TYPE_WELFARE= 1005027;
+	public final static int EVENT_START_INSTANCE= 1005028;
+	public final static int EVENT_END_INSTANCE= 1005029;
 }
