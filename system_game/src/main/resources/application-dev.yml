@@ -43,4 +43,5 @@ logging:
     com.system.service.DictionaryService: debug
     com.system.service.PermissionService: debug
     com.system.service.RoleService: debug
+    com.system.service.logService: debug
 

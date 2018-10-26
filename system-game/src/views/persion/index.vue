@@ -12,14 +12,17 @@
       </el-date-picker>
       <el-button  class="filter-item" type="primary" icon="el-icon-search" @click="handleSearch">{{buttons.serach}}</el-button>
     </div>
-    <table-model ref="table" :pageFun="getPage" :paging="false" :sortKey="'logtime'" :controlColumn="true" :isLoad="false" :columns="columns">
+    <table-model ref="table" :pageFun="getPage" :sortKey="'logtime'" :isLoad="false" :columns="columns">
       <template slot="Button" slot-scope="button">
           <el-button type="primary" size="small"  @click="detailLog(button.row)" >{{buttons.detail}}</el-button>
       </template>
     </table-model>
 
-    <el-dialog fullscreen="true" title="日志详情" :visible.sync="dialogFormVisible">
-      <component :is="tableComponent" :search="false" :isLoad="true" :params="params"></component>
+    <el-dialog title="日志详情" :visible.sync="dialogFormVisible">
+      <el-form v-for="logs in logData" :inline="true"  class="demo-form-inline">
+        <el-form-item v-for="log in logs" :label="log.key">
+        </el-form-item>
+      </el-form>
     </el-dialog>
   </div>
 </template>
@@ -111,26 +114,39 @@
             value: 'logname'
           },
           {
-            text: '日志总数',
-            value: 'logcount'
+            text: '角色ID',
+            value: 'roleid'
+          },
+          {
+            text: '角色名称',
+            value: 'rolename'
+          },
+          {
+            text: '用户ID',
+            value: 'userid'
+          },
+          {
+            text: '帐号',
+            value: 'account'
           }
         ]
       }
     },
     methods: {
-      getPage() {
+      getPage(curPage, pageSize) {
         const params = {}
         if (this.params.date !== null) {
           params.startDate = formatDate(this.params.date[0], 'yyyy-MM-dd hh:mm:ss')
           params.endDate = formatDate(this.params.date[1], 'yyyy-MM-dd hh:mm:ss')
         }
         params.service = this.params.service
+        params.pageSize = pageSize
         params.roleId = this.params.roleId
         params.roleName = this.params.roleName
         params.userId = this.params.userId
         params.account = this.params.account
         return new Promise((resolve, reject) => {
-          getPersonList(params).then(response => {
+          getPersonList(curPage, params).then(response => {
             resolve(response)
           }).catch(error => {
             reject(error)
@@ -150,9 +166,92 @@
       },
       detailLog(data) {
         this.tableComponent = data.logname
-        this.logData = data
+        this.logData = this.logDetail(this.tableComponent, data)
         this.dialogFormVisible = true
-        console.log(data)
+      },
+      logDetail(logname, data) {
+        let tempData = {}
+        switch (logname) {
+          case 'rolelogin':
+            debugger
+            tempData = {
+              '记录时间': data.logtime,
+              '角色ID': data.roleid,
+              '角色名称': data.rolename,
+              '用户ID': data.userid,
+              '帐号': data.account,
+              '等级': data.params6,
+              '平台': data.params5,
+              '操作系统': data.params1,
+              'ip地址': data.params2,
+              '总金额': data.params3,
+              '服务器': data.serverid
+            }
+            break
+          case 'addcash':
+            break
+          case 'addyuanbao':
+            break
+          case 'chardata':
+            break
+          case 'chatlog':
+            break
+          case 'costyuanbao':
+            break
+          case 'levelup':
+            break
+          case 'endtarena':
+            break
+          case 'endtask':
+            break
+          case 'exchange':
+            break
+          case 'gainitem':
+            break
+          case 'jiazurank':
+            break
+          case 'welfare':
+            break
+          case 'loseitem':
+            break
+          case 'rank':
+            break
+          case 'createrole':
+            break
+          case 'shoptrade':
+            break
+          case 'startarena':
+            break
+          case 'starttask':
+            break
+          case 'rolelogout':
+            break
+          case 'recruit':
+            break
+          case 'startinstance':
+            break
+          case 'endinstance':
+            break
+        }
+        const dataArray = []
+        const tempKey = Object.keys(tempData)
+        for (let i = 0; i < tempKey.length.length; i++) {
+          const tempArray = []
+          const t = {}
+          t.key = tempKey[i]
+          t.value = tempData[tempKey[i]]
+          tempArray.push(t)
+          if (i < tempKey.length) {
+            const s = {}
+            ++i
+            s.key = tempKey[i]
+            s.value = tempData[tempKey[i]]
+            tempArray.push(s)
+          }
+          dataArray.push(tempArray)
+        }
+
+        return dataArray
       }
     }
 

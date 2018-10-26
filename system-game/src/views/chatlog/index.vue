@@ -33,7 +33,9 @@
       },
       params: {
         type: Object,
-        default: {}
+        default: () => {
+          return {}
+        }
       },
       isLoad: {
         type: Boolean,
@@ -53,14 +55,6 @@
           serach: '搜索'
         },
         importanceOptions: [1, 2, 3],
-        params: {
-          service: '',
-          date: null,
-          roleId: '',
-          roleName: '',
-          userId: '',
-          account: ''
-        },
         columns: [
           {
             text: '记录时间',

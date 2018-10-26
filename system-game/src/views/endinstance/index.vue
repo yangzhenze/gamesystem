@@ -21,11 +21,11 @@
 </template>
 <script>
   import tableModel from '@/components/Table'
-  import { getStartInstanceList } from '@/api/log'
+  import { getEndInstanceList } from '@/api/log'
   import { isEmpty, formatDate } from '@/utils'
 
   export default {
-    name: 'startinstance',
+    name: 'endinstance',
     props: {
       search: {
         type: Boolean,
@@ -119,7 +119,7 @@
         params.account = this.params.account
         params.pageSize = pageSize
         return new Promise((resolve, reject) => {
-          getStartInstanceList(curPage, params).then(response => {
+          getEndInstanceList(curPage, params).then(response => {
             resolve(response)
           }).catch(error => {
             reject(error)

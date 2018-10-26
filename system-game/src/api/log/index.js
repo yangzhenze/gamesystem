@@ -178,9 +178,9 @@ export function getWelfareList(page, params) {
 }
 
 // 查看个人日志
-export function getPersonList(params) {
+export function getPersonList(page, params) {
   return request({
-    url: '/api/log/person',
+    url: '/api/log/person/' + page,
     method: 'get',
     params
   })

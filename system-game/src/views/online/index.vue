@@ -53,7 +53,8 @@
           },
           {
             text: '操作系统',
-            value: 'params2'
+            value: 'params2',
+            dicCode: 'os'
           },
           {
             text: '服务器',

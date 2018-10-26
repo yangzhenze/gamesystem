@@ -33,7 +33,9 @@
       },
       params: {
         type: Object,
-        default: {}
+        default: () => {
+          return {}
+        }
       },
       isLoad: {
         type: Boolean,
@@ -63,6 +65,14 @@
             value: 'rolename'
           },
           {
+            text: '用户ID',
+            value: 'userid'
+          },
+          {
+            text: '帐号',
+            value: 'account'
+          },
+          {
             text: '等级',
             value: 'params6'
           },
@@ -90,14 +100,6 @@
           {
             text: 'PID',
             value: 'params4'
-          },
-          {
-            text: '用户ID',
-            value: 'userid'
-          },
-          {
-            text: '帐号',
-            value: 'account'
           }
         ]
       }
@@ -123,8 +125,6 @@
         params.pageSize = pageSize
         return new Promise((resolve, reject) => {
           getLoginList(curPage, params).then(response => {
-
-
             resolve(response)
           }).catch(error => {
             reject(error)

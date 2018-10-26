@@ -5,6 +5,10 @@ spring:
     #static-locations: classpath:/static/,classpath:/META-INF/resources,file:/Users/yangzhenze/Downloads/
   #mvc:
     #static-path-pattern: /static/**
+  boot:
+    admin:
+      client:
+        url: "http://localhost:9019"
 web:
   upload-path: file:/Users/yangzhenze/Downloads/images/
 eureka:
@@ -16,11 +20,6 @@ server:
 feign:
   hystrix:
     enabled: true
-ribbon:
-  #请求处理的超时时间
-  ReadTimeout: 10000
-  #请求连接的超时时间
-  ConnectTimeout: 10000
 #hystrix 配置
 hystrix:
   command:
@@ -28,8 +27,21 @@ hystrix:
       execution:
         timeout:
           #如果enabled设置为false，则请求超时交给ribbon控制
-          enabled: false
+          enabled: true
         isolation:
           thread:
-            timeoutInMilliseconds: 3000
+            timeoutInMilliseconds: 15000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#feign日志输出
+logging:
+  level:
+    com.system.service.AdminService: debug
+    com.system.service.DictionaryService: debug
+    com.system.service.PermissionService: debug
+    com.system.service.RoleService: debug
+    com.system.service.logService: debug
 

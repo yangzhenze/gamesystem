@@ -123,7 +123,6 @@ export function toRouters(data) {
     data.forEach(function(item) {
       if (item.permission_type === 0) {
         const routers = {}
-        routers.name = item.permission_name
         routers.meta = { title: item.permission_name, icon: item.icon }
         if (item.parent_id === null || item.parent_id === '') {
           routers.path = '/' + item.visit_url
@@ -132,6 +131,7 @@ export function toRouters(data) {
           routers.path = item.visit_url
           routers.component = resolve => require(['../views/' + item.visit_url + ''], resolve)
         }
+        routers.name = routers.path
 
         if (item.children !== undefined) {
           const children = []
@@ -153,7 +153,6 @@ export function toRouters(data) {
   } else {
     if (data.permission_type === 0) {
       const routers = {}
-      routers.name = data.permission_name
       routers.meta = { title: data.permission_name, icon: data.icon }
       if (data.parent_id === null || data.parent_id === '') {
         routers.path = '/' + data.visit_url
@@ -162,6 +161,7 @@ export function toRouters(data) {
         routers.path = data.visit_url
         routers.component = resolve => require(['../views/' + data.visit_url + ''], resolve)
       }
+      routers.name = data.visit_url
       if (data.children !== undefined) {
         const children = []
         data.children.forEach(function(item) {
