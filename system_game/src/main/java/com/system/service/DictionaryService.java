@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
  * @author zzy
  * @Date 2018/8/17 下午1:37
  */
-@FeignClient(value = "systemAdmin", fallback = DictionaryServiceHystrix.class)
+@FeignClient(name = "systemAdmin", fallback = DictionaryServiceHystrix.class)
 public interface DictionaryService {
 
     @GetMapping(value = "/dic/page/{page}")

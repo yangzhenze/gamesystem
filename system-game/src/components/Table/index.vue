@@ -1,7 +1,7 @@
 <template>
   <div>
   <el-table ref="table" :data="list"  v-loading.body="listLoading" element-loading-text="加载" @row-click="handleRowChange" @selection-change="selsChange" border fit highlight-current-row  >
-    <el-table-column type="selection">
+    <el-table-column v-if="selection" type="selection">
     </el-table-column>
     <el-table-column v-for="(column, index) in columns" :key="column.value" :label="column.text" :width="column.width" :sortable="column.sort" :prop="column.value">
       <template slot-scope="scope">
@@ -43,6 +43,10 @@
         columns: { // 分行
           type: Array,
           default: () => []
+        },
+        selection: {
+          type: Boolean,
+          default: false
         },
         isLoad: {
           type: Boolean,

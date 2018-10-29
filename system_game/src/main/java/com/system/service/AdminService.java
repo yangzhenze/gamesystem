@@ -1,6 +1,7 @@
 package com.system.service;
 
 import com.system.bean.Admin;
+import com.system.config.shiro.FeignLogConfiguration;
 import com.system.service.hystrix.AdminServiceHystrix;
 import feign.Headers;
 import feign.Param;
@@ -16,7 +17,7 @@ import java.beans.Encoder;
  * @author zzy
  * @Date 2018/8/16 上午11:58
  */
-@FeignClient(value = "systemAdmin",fallback = AdminServiceHystrix.class)
+@FeignClient(name = "systemAdmin",fallback = AdminServiceHystrix.class,configuration = FeignLogConfiguration.class)
 public interface AdminService {
 
     @RequestMapping(value = "/admin/login", method = RequestMethod.POST)

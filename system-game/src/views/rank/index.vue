@@ -87,7 +87,7 @@
     methods: {
       getPage(curPage, pageSize) {
         const params = {}
-        if (this.params.date !== null) {
+        if (this.params.date !== null && this.params.date !== undefined) {
           params.startDate = formatDate(this.params.date[0], 'yyyy-MM-dd hh:mm:ss')
           params.endDate = formatDate(this.params.date[1], 'yyyy-MM-dd hh:mm:ss')
         }

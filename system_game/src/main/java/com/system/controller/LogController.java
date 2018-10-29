@@ -176,6 +176,7 @@ public class LogController {
     @RequestMapping(value = "/person/{page}", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
     @ApiOperation(value = "查看个人日志",notes = "查看个人日志")
     public String getPerson(@PathVariable("page") int page, Integer pageSize,String service,String startDate,String endDate,String roleId,String roleName,String userId,String account,String sort){
+        System.out.println(logService.findAll(page,pageSize,service,startDate,endDate,roleId,roleName,userId,account,null,null,sort));
         return logService.findAll(page,pageSize,service,startDate,endDate,roleId,roleName,userId,account,null,null,sort);
     }
 

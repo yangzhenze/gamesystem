@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
  * @author zzy
  * @Date 2018/8/17 下午1:38
  */
-@FeignClient(value = "systemAdmin", fallback = RoleServiceHystrix.class,configuration = FeignLogConfiguration.class)
+@FeignClient(name = "systemAdmin", fallback = RoleServiceHystrix.class,configuration = FeignLogConfiguration.class)
 public interface RoleService {
     @RequestMapping(value = "/role", method = RequestMethod.POST)
     String addRole(@RequestBody Role role);
