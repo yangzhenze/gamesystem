@@ -16,4 +16,6 @@ public interface IPermissionDao extends IBaseDao<Permission> {
     List<Permission> findFunctionByRole(Integer roleId);
 
     boolean findByPath(String path, Integer parentId, Integer id);
+
+    Permission findBySort(Integer parentId, int sort);
 }

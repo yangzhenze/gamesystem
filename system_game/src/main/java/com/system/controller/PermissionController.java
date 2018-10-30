@@ -1,6 +1,7 @@
 package com.system.controller;
 
 import com.system.bean.Permission;
+import com.system.common.util.Ret;
 import com.system.service.PermissionService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -64,5 +65,16 @@ public class PermissionController {
     public String checkPath(String path,Integer parentId,Integer id){
 
         return permissionService.checkPath(path,parentId,id);
+    }
+
+    @RequestMapping(value = "/changeSort", method = RequestMethod.PUT, produces = "application/json;charset=UTF-8")
+    @ApiOperation(value = "移动排序",notes = "移动排序")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "flag",value = "上移下移标识(up,down)",required = true,paramType = "query",dataType = "String"),
+            @ApiImplicitParam(name = "parentId",value = "父级id",required = false,paramType = "query",dataType = "Integer"),
+            @ApiImplicitParam(name = "sort",value = "排序",required = true,paramType = "query",dataType = "Integer")
+    })
+    public String changeSort(String flag,Integer parentId,Integer sort){
+        return permissionService.changeSort(flag,parentId,sort);
     }
 }

@@ -46,4 +46,9 @@ public class PermissionServiceHystrix implements PermissionService{
     public String checkPath(String path, Integer parentId, Integer id) {
         return null;
     }
+
+    @Override
+    public String changeSort(String flag, Integer parentId, Integer sort) {
+        return null;
+    }
 }

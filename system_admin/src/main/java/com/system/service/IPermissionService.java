@@ -20,4 +20,6 @@ public interface IPermissionService {
 
     boolean checkPath(String path, Integer parentId, Integer id);
 
+    boolean changeSort(Integer parentId, int sort, String flag);
+
 }

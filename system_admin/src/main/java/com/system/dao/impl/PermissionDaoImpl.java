@@ -86,6 +86,20 @@ public class PermissionDaoImpl extends BaseDao<Permission> implements IPermissio
     }
 
     @Override
+    public Permission findBySort(Integer parentId, int sort) {
+        String sql = "SELECT * FROM " + this.tableName + " WHERE sort = ?";
+        if(parentId == null){
+            sql += " and parent_id is null";
+        }else{
+            sql += " and parent_id = "+parentId+"";
+        }
+
+        List<Permission> list = super.jdbcTemplate.query(sql,this.rowMapper,sort);
+
+        return list.size() > 0?list.get(0):null;
+    }
+
+    @Override
     public List<Map<String,Object>> findTreeList(Integer id, Integer roleId){
         List<Map<String,Object>> results = null;
         String sql = null;

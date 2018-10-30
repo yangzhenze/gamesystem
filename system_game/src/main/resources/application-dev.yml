@@ -5,6 +5,8 @@ spring:
     #static-locations: classpath:/static/,classpath:/META-INF/resources,file:/Users/yangzhenze/Downloads/
   #mvc:
     #static-path-pattern: /static/**
+  zipkin:
+    base-url: http://localhost:9014
 web:
   upload-path: file:/Users/yangzhenze/Downloads/images/
 eureka:
@@ -31,5 +33,11 @@ hystrix:
           enabled: false
         isolation:
           thread:
-            timeoutInMilliseconds: 3000
-
+            timeoutInMilliseconds: 10000
+#feign日志输出
+logging:
+  level:
+    com.system.service.AdminService: debug
+    com.system.service.DictionaryService: debug
+    com.system.service.PermissionService: debug
+    com.system.service.RoleService: debug

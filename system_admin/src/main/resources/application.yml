@@ -15,7 +15,10 @@ spring:
           stat:
             log-slow-sql: true #sql
             slow-sql-millis: 2000 #\u6162sql\u8BB0\u5F55
-        filters: stat,wall #\u76D1\u63A7\u7EDF\u8BA1\u7528\u7684filter:stat\u65E5\u5FD7\u7528\u7684filter:log4j\u9632\u5FA1sql\u6CE8\u5165\u7684filter:wall
+        filters: stat,wall
+        remove-abandoned: true
+        log-abandoned: true
+        remove-abandoned-timeout: 180
     driver-class-name: com.mysql.jdbc.Driver
 eureka:
   client:
@@ -23,3 +26,11 @@ eureka:
       defaultZone: http://localhost:9011/eureka/
 server:
   port: 9012
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  #<2>
+  endpoint:
+    health:
+      show-details: ALWAYS

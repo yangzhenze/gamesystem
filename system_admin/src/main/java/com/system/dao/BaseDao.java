@@ -36,7 +36,7 @@ public class BaseDao<T> {
 
     @Autowired
     protected JdbcTemplate jdbcTemplate;
-    private String tableName;
+    public String tableName;
     private String pkName;
     public RowMapper<T> rowMapper;
 

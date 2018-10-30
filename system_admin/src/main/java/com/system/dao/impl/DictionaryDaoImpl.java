@@ -61,7 +61,8 @@ public class DictionaryDaoImpl extends BaseDao<Dictionary> implements IDictionar
 
     @Override
     public String findName(String code, String value) {
-        return super.jdbcTemplate.queryForObject("select * from sys_dictionary where dic_code = ? and dic_value = ?",String.class,code,value);
+        List<Map<String,Object>>  result = super.jdbcTemplate.queryForList("select dic_name from sys_dictionary where dic_code = ? and dic_value = ?",code,value);
+        return result.size() > 0 ? result.get(0).get("dic_name").toString() : "";
     }
 
     @Override

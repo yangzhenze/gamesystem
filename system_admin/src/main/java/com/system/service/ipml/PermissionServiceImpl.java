@@ -5,6 +5,7 @@ import com.system.dao.IPermissionDao;
 import com.system.service.IPermissionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Map;
@@ -64,6 +65,33 @@ public class PermissionServiceImpl implements IPermissionService {
     @Override
     public boolean checkPath(String path, Integer parentId, Integer id) {
         return permissionDao.findByPath(path,parentId,id);
+    }
+
+    @Override
+    @Transactional
+    public boolean changeSort(Integer parentId, int sort, String flag) {
+        Permission permission = permissionDao.findBySort(parentId,sort);
+
+        if(null != permission){
+            Permission newPermission = null;
+            if("up".equals(flag)){
+                newPermission = permissionDao.findBySort(permission.getParentId(),permission.getSort()-1);
+            }else if("down".equals(flag)){
+                newPermission = permissionDao.findBySort(permission.getParentId(),permission.getSort()+1);
+            }
+
+            if(null != newPermission){
+                int tempsort = permission.getSort();
+                permission.setSort(newPermission.getSort());
+                newPermission.setSort(tempsort);
+
+                if(permissionDao.update(permission)){
+                    return permissionDao.update(newPermission);
+                }
+            }
+        }
+
+        return false;
     }
 
     public static void main(String [] args){

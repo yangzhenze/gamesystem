@@ -1,6 +1,7 @@
 package com.system.service;
 
 import com.system.bean.Admin;
+import com.system.config.FeignLogConfiguration;
 import com.system.service.hystrix.AdminServiceHystrix;
 import feign.Headers;
 import feign.Param;
@@ -16,27 +17,27 @@ import java.beans.Encoder;
  * @author zzy
  * @Date 2018/8/16 上午11:58
  */
-@FeignClient(value = "systemAdmin",fallback = AdminServiceHystrix.class)
-public interface AdminService {
+@FeignClient(value = "systemAdmin",fallback = AdminServiceHystrix.class,configuration = FeignLogConfiguration.class)
+public abstract class AdminService {
 
     @RequestMapping(value = "/admin/login", method = RequestMethod.POST)
-    public Admin login(@RequestParam("account") String account,@RequestParam("password") String password);
+    public abstract Admin login(@RequestParam("account") String account, @RequestParam("password") String password);
 
     @PostMapping(value = "/admin", produces = "application/json;charset=UTF-8")
-    String addAdmin(@RequestBody Admin admin);
+    public abstract String addAdmin(@RequestBody Admin admin);
 
     @GetMapping(value = "/admin/{id}", produces = "application/json;charset=UTF-8")
-    String getAdminById(@PathVariable("id") Integer id);
+    public abstract String getAdminById(@PathVariable("id") Integer id);
 
     @PutMapping(value = "/admin", produces = "application/json;charset=UTF-8")
-    String update(Admin admin);
+    public abstract String update(Admin admin);
 
     @GetMapping(value = "/admin/page/{page}", produces = "application/json;charset=UTF-8")
-    String getAdminPage(@PathVariable("page") Integer page,@RequestParam("pageSize") Integer pageSize);
+    public abstract String getAdminPage(@PathVariable("page") Integer page, @RequestParam("pageSize") Integer pageSize);
 
     @PostMapping(value = "/admin/checkAccount")
-    String checkAccount(@RequestParam("account") String account,@RequestParam("id") Integer id);
+    public abstract String checkAccount(@RequestParam("account") String account, @RequestParam("id") Integer id);
 
     @DeleteMapping(value = "/admin/{id}")
-    String delAdmin (@PathVariable("id") Integer [] id);
+    public abstract String delAdmin(@PathVariable("id") Integer[] id);
 }

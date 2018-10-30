@@ -103,4 +103,18 @@ public class PermissionController {
         result.put("result",false);
         return Ret.msgSuccess("该路径已存在",result);
     }
+
+    @RequestMapping(value = "/changeSort", method = RequestMethod.PUT, produces = "application/json;charset=UTF-8")
+    @ApiOperation(value = "移动排序",notes = "移动排序")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "flag",value = "上移下移标识(up,down)",required = true,paramType = "query",dataType = "String"),
+            @ApiImplicitParam(name = "parentId",value = "父级id",required = false,paramType = "query",dataType = "Integer"),
+            @ApiImplicitParam(name = "sort",value = "排序",required = true,paramType = "query",dataType = "Integer")
+    })
+    public String changeSort(String flag,Integer parentId,Integer sort){
+        if(permissionService.changeSort(parentId,sort,flag)){
+            return Ret.msgSuccess();
+        }
+        return Ret.msgSetVal("失败");
+    }
 }
