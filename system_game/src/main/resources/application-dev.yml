@@ -33,7 +33,12 @@ hystrix:
           enabled: false
         isolation:
           thread:
-            timeoutInMilliseconds: 10000
+            timeoutInMilliseconds: 3000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 #feign日志输出
 logging:
   level:
@@ -41,3 +46,4 @@ logging:
     com.system.service.DictionaryService: debug
     com.system.service.PermissionService: debug
     com.system.service.RoleService: debug
+

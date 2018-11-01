@@ -1,6 +1,8 @@
 spring:
   application:
     name: systemGame
+  zipkin:
+    base-url: http://localhost:9014
 web:
   upload-path: file:/home/images/
 eureka:
@@ -28,3 +30,15 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 3000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#feign日志输出
+logging:
+  level:
+    com.system.service.AdminService: debug
+    com.system.service.DictionaryService: debug
+    com.system.service.PermissionService: debug
+    com.system.service.RoleService: debug

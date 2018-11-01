@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
  * @Date 2018/8/25 上午9:28
  */
 @Component
-public class AdminServiceHystrix extends AdminService {
+public class AdminServiceHystrix implements AdminService{
 
     @Override
     public Admin login(String account, String password) {

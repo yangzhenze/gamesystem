@@ -41,11 +41,6 @@ public class BaseDao<T> {
     public RowMapper<T> rowMapper;
 
 
-
-    public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
-    }
-
     private Class<T> entityClass;
 
     @SuppressWarnings("unchecked")
@@ -323,12 +318,6 @@ public class BaseDao<T> {
         return ORDER_BY_PATTERN.matcher(sql).replaceAll("");
     }
 
-    public static void main(String [] args){
-
-        String sss = "WHERE IS";
-
-       // System.out.println(sss.toLowerCase().indexOf("WHERE"));
-    }
 
 
 

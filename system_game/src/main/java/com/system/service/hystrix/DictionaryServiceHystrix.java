@@ -41,12 +41,17 @@ public class DictionaryServiceHystrix implements DictionaryService{
     }
 
     @Override
+    public String checkValue(String value, Integer parentId, Integer id) {
+        return null;
+    }
+
+    @Override
     public String getName(String code, String value) {
         return null;
     }
 
     @Override
-    public String checkValue(String value, Integer parentId, Integer id) {
+    public String getDicListByCode(String code) {
         return null;
     }
 }

@@ -1,7 +1,6 @@
 package com.system.service;
 
 import com.system.bean.Permission;
-import com.system.config.FeignLogConfiguration;
 import com.system.service.hystrix.PermissionServiceHystrix;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
@@ -12,7 +11,7 @@ import java.util.List;
  * @author zzy
  * @Date 2018/8/17 下午1:38
  */
-@FeignClient(value = "systemAdmin", fallback = PermissionServiceHystrix.class,configuration = FeignLogConfiguration.class)
+@FeignClient(value = "systemAdmin", fallback = PermissionServiceHystrix.class)
 public interface PermissionService {
 
     @RequestMapping(value = "/per", method = RequestMethod.POST)

@@ -169,7 +169,8 @@ export default {
     }
     .el-form-item {
       border: 1px solid rgba(255, 255, 255, 0.1);
-      background: rgba(0, 0, 0, 0.1);
+      // background: rgba(0, 0, 0, 0.1);
+      background: #283443;
       border-radius: 5px;
       color: #454545;
     }
@@ -186,6 +187,8 @@ $light_gray:#eee;
   height: 100%;
   width: 100%;
   background-color: $bg;
+  background-image: url("../../assets/login.jpg");
+  background-size: cover;
   .login-form {
     position: absolute;
     left: 0;

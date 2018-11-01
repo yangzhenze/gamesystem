@@ -48,9 +48,9 @@ public class DictionaryDaoImpl extends BaseDao<Dictionary> implements IDictionar
 
     @Override
     public Page<Map<String,Object>> findMapPage(int page, int pageSize, Object... args) {
-        Page<Map<String,Object>> pages = super.paginate(page, pageSize,"select * ","from sys_dictionary where dic_parent_id is null order by create_date");
+        Page<Map<String,Object>> pages = super.paginate(page, pageSize,"select * ","from sys_dictionary where dic_parent_id is null order by id");
         pages.getList().forEach((item) -> {
-            List<Map<String,Object>> child= super.select("select * from sys_dictionary where dic_parent_id = ? order by dic_value,create_date",item.get("id"));
+            List<Map<String,Object>> child= super.select("select * from sys_dictionary where dic_parent_id = ? order by id",item.get("id"));
             if (child.size() > 0) {
                 item.put("children",child);
             }
@@ -67,12 +67,12 @@ public class DictionaryDaoImpl extends BaseDao<Dictionary> implements IDictionar
 
     @Override
     public List<Dictionary> findByParentId(Integer id) {
-        return super.findEntity("select * from sys_dictionary where dic_parent_id = ? order by create_date desc",id);
+        return super.findEntity("select * from sys_dictionary where dic_parent_id = ? order by id desc",id);
     }
 
     @Override
     public List<Dictionary> findByCode(String code) {
-        return super.findEntity("select * from sys_dictionary where dic_code = ? and dic_parent_id is not null order by create_date desc",code);
+        return super.findEntity("select * from sys_dictionary where dic_code = ? and dic_parent_id is not null order by id desc",code);
     }
 
     @Override

@@ -1,7 +1,6 @@
 package com.system.controller;
 
 import com.system.bean.Permission;
-import com.system.common.util.Ret;
 import com.system.service.PermissionService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;

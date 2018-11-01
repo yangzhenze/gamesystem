@@ -74,3 +74,12 @@ export function getDicName(params) {
     params
   })
 }
+
+// 获取字典列表
+export function getDicListByCode(params) {
+  return request({
+    url: '/api/dic/code',
+    method: 'get',
+    params
+  })
+}

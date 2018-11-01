@@ -25,8 +25,8 @@ import java.util.List;
 @Configuration
 public class Swagger2 extends WebMvcConfigurationSupport {
 
-    /*@Value("${web.upload-path}")
-    private String filePath;*/
+    @Value("${web.upload-path}")
+    private String filePath;
 
 
 
@@ -52,7 +52,7 @@ public class Swagger2 extends WebMvcConfigurationSupport {
      * 需要重新指定静态资源
      * @param registry
      */
-    /*@Override
+    @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         System.out.println(filePath);
         registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/").addResourceLocations(filePath);
@@ -61,7 +61,7 @@ public class Swagger2 extends WebMvcConfigurationSupport {
         registry.addResourceHandler("/webjars/**")
                 .addResourceLocations("classpath:/META-INF/resources/webjars/");
         super.addResourceHandlers(registry);
-    }*/
+    }
 
 
 

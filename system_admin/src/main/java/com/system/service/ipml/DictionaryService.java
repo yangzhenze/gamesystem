@@ -7,6 +7,7 @@ import com.system.service.IDictionaryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.interceptor.TransactionAspectSupport;
 
 import java.util.List;
 import java.util.Map;
@@ -31,8 +32,26 @@ public class DictionaryService implements IDictionaryService {
     }
 
     @Override
+    @Transactional
     public boolean update(Dictionary dictionary) {
-        return dictionaryDao.update(dictionary);
+        if(dictionaryDao.update(dictionary)){
+            List<Dictionary> dictionaryList = dictionaryDao.findByParentId(dictionary.getId());
+            for(Dictionary d:dictionaryList){
+                d.setDicCode(dictionary.getDicCode());
+                try{
+                    if(!dictionaryDao.update(d)){
+                        throw new RuntimeException("更新异常！");
+                    }
+                }catch (Exception e){
+                    e.printStackTrace();
+                    TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();//关键
+                    return false;
+                }
+            }
+        }
+
+
+        return true;
     }
 
     @Override

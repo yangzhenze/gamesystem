@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -145,6 +146,26 @@ public class DictionaryController {
             return Ret.msgSuccess(value+"已存在",result);
         }
         result.put("result",true);
+        return Ret.msgSuccess(result);
+    }
+
+    @RequestMapping(value = "/code", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
+    @ApiOperation(value = "获取字典列表",notes = "根据code获取字典列表")
+    @ApiImplicitParams({
+            @ApiImplicitParam(paramType = "query", dataType = "code", name = "value", value = "标识码", required = true)
+    })
+    public String getDicListByCode(String code){
+        Map<String, String> result = new HashMap<>();
+        List<Dictionary> dictionaries =  dictionaryService.getByCode(code);
+        if (StrUtil.isBlank(code)) {
+            return Ret.msgSetVal("参数code不能为空");
+        }
+
+        dictionaries.forEach(d -> {
+            result.put(d.getDicValue(),d.getDicName());
+        });
+
+
         return Ret.msgSuccess(result);
     }
 }

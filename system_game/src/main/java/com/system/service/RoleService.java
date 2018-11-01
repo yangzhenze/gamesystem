@@ -1,7 +1,6 @@
 package com.system.service;
 
 import com.system.bean.Role;
-import com.system.config.FeignLogConfiguration;
 import com.system.service.hystrix.RoleServiceHystrix;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
  * @author zzy
  * @Date 2018/8/17 下午1:38
  */
-@FeignClient(value = "systemAdmin", fallback = RoleServiceHystrix.class,configuration = FeignLogConfiguration.class)
+@FeignClient(value = "systemAdmin", fallback = RoleServiceHystrix.class)
 public interface RoleService {
     @RequestMapping(value = "/role", method = RequestMethod.POST)
     String addRole(@RequestBody Role role);

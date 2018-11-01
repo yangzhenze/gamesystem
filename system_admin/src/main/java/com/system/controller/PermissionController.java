@@ -113,7 +113,7 @@ public class PermissionController {
     })
     public String changeSort(String flag,Integer parentId,Integer sort){
         if(permissionService.changeSort(parentId,sort,flag)){
-            return Ret.msgSuccess();
+            return Ret.msgSuccess("成功");
         }
         return Ret.msgSetVal("失败");
     }
