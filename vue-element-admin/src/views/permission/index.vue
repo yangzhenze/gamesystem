@@ -4,21 +4,26 @@
       <el-button class="filter-item" style="margin-left: 10px;" icon="el-icon-circle-plus" type="primary" @click="handleCreate">{{ $t('table.add') }}</el-button>
     </div>
 
-    <tree-table :data="list" :columns="columns" :expand-all="'true'" border>
-
-      <el-table-column :label="$t('permission.column.name')" align="left">
-        <template slot-scope="scope">
-          <el-button type="success" size="small" icon="el-icon-edit" @click="getData(scope.row.id)" >{{ $t('table.edit') }}</el-button>
-          <el-button type="danger" size="small" icon="el-icon-delete" @click="delData(scope.row.id)" >{{ $t('table.delete') }}</el-button>
-          <el-button v-if="scope.row.permission_type == 0" type="primary" size="small" icon="el-icon-circle-plus" @click="handleChildrenCreate(scope.row.id, scope.row.permission_name)" >{{ $t('table.add') }}</el-button>
-          <el-button size="small" type="warning" icon="el-icon-sort-up" @click="changePerSort(scope.row.parent_id, scope.row.sort,'up')" >{{ $t('table.up') }}</el-button>
-          <el-button size="small" type="warning" icon="el-icon-sort-down" @click="changePerSort(scope.row.parent_id, scope.row.sort,'down')" >{{ $t('table.down') }}</el-button>
-        </template>
+    <tree-table :data="list" :columns="columns" :expand-all="true" border>
+      <el-table-column :label="$t('permission.column.actions')" align="left" >
+        <el-table-column>
+          <template slot-scope="scope">
+            <el-button type="success" size="small" icon="el-icon-edit"  @click="getData(scope.row.id)" >{{ $t('table.edit') }}</el-button>
+            <el-button type="danger" size="small" icon="el-icon-delete" @click="delData(scope.row.id)" >{{ $t('table.delete') }}</el-button>
+            <el-button v-if="scope.row.permission_type == 0" type="primary" size="small" icon="el-icon-circle-plus" @click="handleChildrenCreate(scope.row.id, scope.row.permission_name)" >{{ $t('table.add') }}</el-button>
+          </template>
+        </el-table-column>
+        <el-table-column>
+          <template slot-scope="scope">
+            <el-button size="small" type="warning" icon="el-icon-sort-up" @click="changePerSort(scope.row.parent_id, scope.row.sort,'up')" >{{ $t('table.up') }}</el-button>
+            <el-button size="small" type="warning" icon="el-icon-sort-down" @click="changePerSort(scope.row.parent_id, scope.row.sort,'down')" >{{ $t('table.down') }}</el-button>
+          </template>
+        </el-table-column>
       </el-table-column>
     </tree-table>
 
     <el-dialog :title="textMap[dialogStatus]" :visible.sync="dialogFormVisible">
-      <el-form ref="dataForm" :model="dataForm" :rules="rules" label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
+      <el-form ref="dataForm" :model="dataForm" :rules="formRoles" label-position="left" label-width="100px" style="width: 400px; margin-left:50px;">
         <el-form-item v-if="parentName" label="父级">
           <el-input v-model="parentName" disabled />
         </el-form-item>
@@ -31,6 +36,11 @@
         <el-form-item :label="$t('permission.form.type')">
           <el-select v-model="dataForm.permissionType">
             <el-option v-for="item in permissionOption" :key="item.value" :label="item.lable" :value="item.value"/>
+          </el-select>
+        </el-form-item>
+        <el-form-item v-if="inputMethodVisible" :label="$t('permission.form.method')" prop="method">
+          <el-select v-model="dataForm.method">
+            <el-option v-for="item in methodList" :key="item" :label="item" :value="item"/>
           </el-select>
         </el-form-item>
         <el-form-item :label="$t('permission.form.icon')">
@@ -57,6 +67,7 @@ import { getList, addPermission, updatePermission, getPermission, delPermission,
 import { objectToFormData } from '@/utils'
 import icons from './generateIconsView'
 export default {
+  name: 'permission',
   components: { treeTable },
   data() {
     const validatePath = (rule, value, callback) => {
@@ -80,21 +91,29 @@ export default {
       list: [],
       parentName: '',
       dialogStatus: 'create',
+      inputMethodVisible: false,
       textMap: {
         update: this.$t('table.edit'),
         create: this.$t('table.add')
       },
+      methodList:[
+        'GET',
+        'POST',
+        'PUT',
+        'DELETE'
+      ],
       iconsMap: icons,
       dataForm: {
         id: '',
         permissionName: '',
         permissionType: 0,
+        method: '',
         visitUrl: '',
         icon: '',
         sort: '',
         parentId: ''
       },
-      rules: {
+      firstRoles: {
         visitUrl: [
           { required: true, message: this.$t('permission.role.visitUrl'), trigger: 'blur' },
           { trigger: 'blur', validator: validatePath }
@@ -103,6 +122,19 @@ export default {
           { required: true, message: this.$t('permission.role.permissionName'), trigger: 'blur' }
         ]
       },
+      secondRules: {
+        visitUrl: [
+          { required: true, message: this.$t('permission.role.visitUrl'), trigger: 'blur' },
+          { trigger: 'blur', validator: validatePath }
+        ],
+        permissionName: [
+          { required: true, message: this.$t('permission.role.permissionName'), trigger: 'blur' }
+        ],
+        method: [
+          { required: true, message: this.$t('permission.role.method'), trigger: 'blur' }
+        ]
+      },
+      formRoles: this.firstRoles,
       permissionOption: [
         { value: 0, lable: this.$t('permission.form.menu') },
         { value: 1, lable: this.$t('permission.form.method') }
@@ -126,6 +158,24 @@ export default {
   },
   created() {
     this.fetchData()
+    this.formRoles = this.firstRoles
+  },
+  computed: {
+    permissionType() {
+       return this.dataForm.permissionType
+    }
+  },
+  watch: {
+    permissionType(val){
+      if(val === 0){
+        this.formRoles = this.firstRoles
+        this.inputMethodVisible = false
+      }else{
+        this.formRoles = this.secondRules
+        this.inputMethodVisible = true
+      }
+      //this.$refs['dataForm'].resetFields()
+    }
   },
   methods: {
     fetchData() {
@@ -162,6 +212,7 @@ export default {
       this.dataForm.permissionName = ''
       this.dataForm.permissionType = 0
       this.dataForm.visitUrl = ''
+      this.dataForm.method = ''
       this.dataForm.icon = ''
       this.dataForm.sort = ''
     },
@@ -215,6 +266,7 @@ export default {
         other.dataForm.permissionName = response.data.permissionName
         other.dataForm.permissionType = response.data.permissionType
         other.dataForm.visitUrl = response.data.visitUrl
+        other.dataForm.method = response.data.method
         other.dataForm.icon = response.data.icon
         other.dataForm.sort = response.data.sort
         other.dialogFormVisible = true

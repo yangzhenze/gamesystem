@@ -1,11 +1,8 @@
 package com.system.common.util;
-
-
-import org.apache.tomcat.util.codec.binary.Base64;
-
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
+import java.util.Base64;
 
 public class AESEncryptUtil {
     //使用AES-128-CBC加密模式，key需要为16位,key和iv可以相同！
@@ -49,7 +46,7 @@ public class AESEncryptUtil {
             //获取数据并加密，正式执行加密操作
             byte[] encrypted = cipher.doFinal(data.getBytes("utf-8"));
 
-            return new Base64().encodeToString(encrypted);
+            return Base64.getEncoder().encodeToString(encrypted);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -67,7 +64,7 @@ public class AESEncryptUtil {
      */
     public static String desEncrypt(String data, String key, String iv) throws Exception {
         try {
-            byte[] encrypted1 = new Base64().decode(data);
+            byte[] encrypted1 = Base64.getDecoder().decode(data);
             // Cipher对象实际完成解密操作
             Cipher cipher = Cipher.getInstance(CBC);
             // 转换成SecretKey对象

@@ -11,18 +11,14 @@ router.beforeEach((to, from, next) => {
   console.log('beforeEach==============================================')
   console.log('vue-router before')
   NProgress.start()
-  console.log(getToken())
   if (getToken()) {
     if (to.path === '/login') {
       next({ path: '/' })
       NProgress.done() // if current page is dashboard will not trigger	afterEach hook, so manually handle it
     } else {
       store.dispatch('GetInfo').then(res => { // 拉取用户信息
-        debugger
         if (store.getters.permission === null) {
-          debugger
           store.dispatch('GetPermission').then(_ => { // 获取权限
-            console.log(store.getters.permission)
             if (Object.keys(store.getters.permission).length > 0) {
               store.getters.permission.forEach(function(item) {
                 router.options.routes.push(item)

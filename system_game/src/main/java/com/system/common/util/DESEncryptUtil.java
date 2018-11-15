@@ -1,12 +1,12 @@
 package com.system.common.util;
 
-import org.apache.tomcat.util.codec.binary.Base64;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import java.security.SecureRandom;
+import java.util.Base64;
 
 /**
  * @author zzy
@@ -34,7 +34,7 @@ public class DESEncryptUtil {
             //获取数据并加密，正式执行加密操作
             byte[] encrypted = cipher.doFinal(data.getBytes("UTF-8"));
 
-            return new Base64().encodeToString(encrypted);
+            return Base64.getEncoder().encodeToString(encrypted);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -50,7 +50,7 @@ public class DESEncryptUtil {
      * @throws Exception
      */
     public static String desEncrypt(String data, String key) throws Exception {
-        byte[] encrypted1 = new Base64().decode(data);
+        byte[] encrypted1 = Base64.getDecoder().decode(data);
         // Cipher对象实际完成解密操作
         Cipher cipher = Cipher.getInstance("DES");
         // 转换成SecretKey对象

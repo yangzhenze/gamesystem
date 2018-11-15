@@ -2,6 +2,7 @@ package com.system.controller;
 
 import com.system.bean.Admin;
 import com.system.common.Const;
+import com.system.common.util.DateUtil;
 import com.system.common.util.Ret;
 import com.system.common.util.StrUtil;
 import com.system.service.IAdminService;
@@ -12,12 +13,17 @@ import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.UUID;
 
 
 /**
@@ -29,6 +35,9 @@ import java.util.Map;
 public class AdminController {
     protected static final Logger logger = LoggerFactory.getLogger(AdminController.class);
     private final String DEFAULT_PWD = StrUtil.getMD5("123456");
+    @Value("${web.upload-path}")
+    private String filePath;
+    private String staticPath = "static/";
 
     @Autowired
     IAdminService adminService;
@@ -41,16 +50,13 @@ public class AdminController {
             @ApiImplicitParam(name = "password",value = "密码",required = true,paramType = "query",dataType = "String")
     })
     public Admin login(@RequestParam("account") String account,@RequestParam("password") String password,HttpServletRequest request){
-        logger.info("===<call login, TraceId={}, SpanId={}>===",
-                request.getHeader("X-B3-TraceId"), request.getHeader("X-B3-SpanId"));
-
         return adminService.login(account, password);
     }
 
     @RequestMapping(value = "", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
     @ApiOperation(value = "创建管理员",notes = "根据admin对象创建管理员")
     @ApiImplicitParam(name = "headPortrait",value = "头像",required = false,paramType = "query",dataType = "String")
-    public String addAdmin(@RequestBody Admin admin, HttpServletRequest request){
+    public String addAdmin(Admin admin, HttpServletRequest request){
 
         if(StrUtil.isBlank(admin.getAccount())){
             return Ret.msgSetVal("account为必传参数");
@@ -83,7 +89,7 @@ public class AdminController {
 
     @RequestMapping(value = "", method = RequestMethod.PUT, produces = "application/json;charset=UTF-8")
     @ApiOperation(value = "更新管理员", notes = "更新管理员信息")
-    public String update(@RequestBody Admin admin){
+    public String update(Admin admin){
         if(StrUtil.isBlank(admin.getAccount())){
             return Ret.msgSetVal("account为必传参数");
         }else if(null == admin.getId()){
@@ -113,7 +119,7 @@ public class AdminController {
        return Ret.msgSuccess(adminService.getPage(page, pageSize));
     }
 
-    @RequestMapping(value = "/checkAccount", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
+    @RequestMapping(value = "/check/account", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
     @ApiOperation(value = "验证管理员帐号是否可用",notes = "根据account(必传)/id(可选)验证管理员帐号是否可用")
     @ApiImplicitParams({
             @ApiImplicitParam(paramType = "form", dataType = "String", name = "account", value = "帐号", required = true),
@@ -141,6 +147,57 @@ public class AdminController {
             return Ret.setSuccessMsg("删除成功");
         }
         return Ret.msgSetVal("删除失败");
+    }
+
+    @RequestMapping(value = "/info", method = RequestMethod.GET, produces = "application/json;charset=UTF-8")
+    @ApiOperation(value = "根据id获取管理员信息", notes = "根据id获取管理员信息")
+    @ApiImplicitParam(name = "id",value = "管理员id",required = true,paramType = "path",dataType = "Integer")
+    public String getAdminInfo(@RequestHeader("admin-id") String id){
+        if(null == id){
+            return Ret.msgSetVal("管理员id不能为空");
+        }
+
+        return Ret.msgSuccess(adminService.getById(Integer.parseInt(id)));
+    }
+
+
+
+
+
+    @RequestMapping(value="/upload",method = RequestMethod.POST,produces={"application/json;charset=UTF-8"})
+    @ApiOperation(value = "文件上传",notes = "上传文件接口")
+    public String uploadAdminImg(@RequestParam("file") MultipartFile file, HttpServletRequest request) {
+        return this.upload(file,"admin");
+
+    }
+
+    private String upload(MultipartFile file, String dicName){
+        // 获取静态上传路径
+        String realFilePath = filePath+dicName+"/";
+        String fileName = this.reNameFile(file.getOriginalFilename());
+        try {
+            uploadFile(file.getBytes(), realFilePath, fileName);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Ret.msgSetVal("文件上传失败");
+        }
+        return Ret.msgSuccess(staticPath+dicName+"/"+fileName);
+    }
+
+    private void uploadFile(byte[] file, String filePath, String fileName) throws Exception {
+        File targetFile = new File(filePath);
+        if(false == targetFile.exists()){
+            targetFile.mkdirs();
+        }
+        FileOutputStream out = new FileOutputStream(filePath+fileName);
+        out.write(file);
+        out.flush();
+        out.close();
+    }
+
+    private String reNameFile(String fileName){
+        String suffix = fileName.substring(fileName.lastIndexOf("."),fileName.length());
+        return DateUtil.formatDate(new Date(),"yyyyMMddhhssmmSSS")+ UUID.randomUUID()+suffix;
     }
 
 

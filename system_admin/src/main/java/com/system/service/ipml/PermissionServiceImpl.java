@@ -3,7 +3,13 @@ package com.system.service.ipml;
 import com.system.bean.Permission;
 import com.system.dao.IPermissionDao;
 import com.system.service.IPermissionService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,22 +21,27 @@ import java.util.Map;
  * @Date 2018/7/11 下午12:25
  */
 @Service
+@CacheConfig(cacheNames = "permission")
 public class PermissionServiceImpl implements IPermissionService {
+    private static final Logger log = LoggerFactory.getLogger(PermissionServiceImpl.class);
     @Autowired
     IPermissionDao permissionDao;
 
     @Override
+    @CacheEvict(value = "permission",allEntries=true)
     public boolean save(Permission permission) {
         permission.setSort(permissionDao.findMaxSort(permission.getParentId()));
         return permissionDao.save(permission);
     }
 
     @Override
+    @CacheEvict(value = "permission",allEntries=true)
     public boolean update(Permission permission) {
         return permissionDao.update(permission);
     }
 
     @Override
+    @CacheEvict(value = "permission",allEntries=true)
     public boolean deleteById(Integer id) {
         List<Permission> childrenPer = permissionDao.findByParentId(id);
         Integer ids [] = new Integer[childrenPer.size()];
@@ -53,7 +64,9 @@ public class PermissionServiceImpl implements IPermissionService {
     }
 
     @Override
+    @Cacheable(value = "permission", key = "#roleId+'-treelist'")
     public List<Map<String, Object>> getTreeList(Integer roleId) {
+        log.info("获取角色权限树形数据");
         return permissionDao.findTreeList(null,roleId);
     }
 

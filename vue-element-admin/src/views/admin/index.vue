@@ -95,7 +95,7 @@
       <div slot="footer" class="dialog-footer">
         <el-button @click="dialogFormVisible = false">{{ $t('table.cancel') }}</el-button>
         <el-button v-if="dialogStatus=='create'" type="primary" @click="createData('dataForm')">{{ $t('table.add') }}</el-button>
-        <el-button v-else type="primary" @click="updateData('dataForm')">{{ $t('table.add') }}</el-button>
+        <el-button v-else type="primary" @click="updateData('dataForm')">{{ $t('table.edit') }}</el-button>
       </div>
 
     </el-dialog>
@@ -130,13 +130,13 @@
 </style>
 
 <script>
-import { getList, addAdmin, checkAccount, getAdminById, updateAdmin, delAdmin } from '@/api/admin'
+import { getList, addAdmin, checkAccount, getAdminById, updateAdmin, delAdmin, upload } from '@/api/admin'
 import { getAllList } from '@/api/role'
-import { upload } from '@/api/common'
 import { validateEmail } from '@/utils/validate'
 import { objectToFormData } from '@/utils'
 
 export default {
+  name: 'admin',
   filters: {
     statusFilter(status) {
       const statusMap = {

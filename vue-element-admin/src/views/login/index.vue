@@ -87,7 +87,6 @@ export default {
   },
   methods: {
     showPwd() {
-      console.log(123)
       if (this.pwdType === 'password') {
         this.pwdType = ''
       } else {
@@ -99,13 +98,9 @@ export default {
         if (valid) {
           this.loading = true
           const desPwd = encrypt.encryptByDE(this.loginForm.password, this.loginForm.username + 'admin')
-          debugger
           this.$store.dispatch('Login', objectToFormData({ username: this.loginForm.username, password: desPwd })).then(() => {
-            console.log(1)
             this.$store.dispatch('GetInfo').then(() => {
-              console.log(2)
               this.$store.dispatch('GetPermission').then(response => {
-                this.loading = false
                 if (Object.keys(this.$store.getters.permission).length > 0) {
                   const other = this
                   this.$store.getters.permission.forEach(function(item) {
@@ -113,6 +108,7 @@ export default {
                   })
                   this.$router.addRoutes(this.$router.options.routes)
                 }
+                this.loading = false
                 this.$router.push({ path: '/' })
               })
             })

@@ -4,7 +4,7 @@ import request from '@/utils/request'
 export function upload(params) {
   request.defaults.headers['Content-Type'] = 'multipart/form-data'
   return request({
-    url: '/api/upload/file',
+    url: '/api/admin/upload',
     method: 'post',
     data: params
   })

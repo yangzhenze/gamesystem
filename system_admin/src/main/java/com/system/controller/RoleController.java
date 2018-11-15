@@ -31,7 +31,7 @@ public class RoleController {
 
     @RequestMapping(value = "", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
     @ApiOperation(value = "创建角色",notes = "根据role对象创建角色")
-    public String addRole(@RequestBody Role role){
+    public String addRole(Role role){
         if(roleService.save(role)){
             return Ret.msgAdd();
         }
@@ -40,7 +40,7 @@ public class RoleController {
 
     @RequestMapping(value = "", method = RequestMethod.PUT, produces = "application/json;charset=UTF-8")
     @ApiOperation(value = "更新角色",notes = "根据role对象更新角色")
-    public String updateRole(@RequestBody Role role){
+    public String updateRole(Role role){
         if(roleService.update(role)){
             return Ret.msgUpdate();
         }

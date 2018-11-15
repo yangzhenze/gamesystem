@@ -1,6 +1,6 @@
 spring:
   application:
-    name: systemProvide
+    name: system-provide
 server:
   port: 9011
 eureka:

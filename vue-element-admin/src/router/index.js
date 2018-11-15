@@ -7,7 +7,7 @@ Vue.use(Router)
 import Layout from '@/views/layout/Layout'
 
 export const constantRouterMap = [
-  /* {
+  {
     path: '/redirect',
     component: Layout,
     hidden: true,
@@ -17,7 +17,7 @@ export const constantRouterMap = [
         component: () => import('@/views/redirect/index')
       }
     ]
-  }, */
+  },
   {
     path: '/login',
     component: () => import('@/views/login/index'),

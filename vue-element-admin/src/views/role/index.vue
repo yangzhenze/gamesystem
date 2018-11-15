@@ -53,6 +53,7 @@ import { getList, addRole, updateRole, getRoleById, delRole, getRolePer, addRole
 import { objectToFormData } from '@/utils'
 import { getList as treeList } from '@/api/permission'
 export default {
+  name: 'role',
   components: { tableModel },
   data() {
     return {
@@ -116,9 +117,9 @@ export default {
           addRole(objectToFormData(this.dataForm)).then(response => {
             if (response.code === 0) {
               other.$message.success(response.msg)
-              other.$refs.tableModel.getPage()
+              other.$refs.tableModel.getPage(1, other.$refs.tableModel.pagination.pagesize)
               other.$refs['dataForm'].resetFields()
-              other.restForm()
+              other.resetForm()
             } else {
               other.$message.error(response.msg)
             }
@@ -134,7 +135,7 @@ export default {
           updateRole(this.dataForm).then(response => {
             if (response.code === 0) {
               other.$message.success(response.msg)
-              other.$refs.tableModel.getPage()
+              other.$refs.tableModel.getPage(1, other.$refs.tableModel.pagination.pagesize)
               other.$refs['dataForm'].resetFields()
               other.resetForm()
             } else {
@@ -178,7 +179,7 @@ export default {
         .then(_ => {
           this.deleteData(ids).then(response => {
             other.$message.success(response.msg)
-            other.$refs.tableModel.getPage()
+            other.$refs.tableModel.getPage(1, other.$refs.tableModel.pagination.pagesize)
           })
         })
         .catch(_ => {})

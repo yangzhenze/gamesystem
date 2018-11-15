@@ -1,12 +1,12 @@
 package com.system.common.util;
 
-import org.apache.tomcat.util.codec.binary.Base64;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 import java.security.SecureRandom;
+import java.util.Base64;
 
 /**
  * @author zzy
@@ -34,7 +34,7 @@ public class DESEncryptUtil {
             //获取数据并加密，正式执行加密操作
             byte[] encrypted = cipher.doFinal(data.getBytes("UTF-8"));
 
-            return new Base64().encodeToString(encrypted);
+            return Base64.getEncoder().encodeToString(encrypted);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -50,28 +50,23 @@ public class DESEncryptUtil {
      * @throws Exception
      */
     public static String desEncrypt(String data, String key) throws Exception {
-        try {
-            byte[] encrypted1 = new Base64().decode(data);
-            // Cipher对象实际完成解密操作
-            Cipher cipher = Cipher.getInstance("DES");
-            // 转换成SecretKey对象
-            DESKeySpec desKey = new DESKeySpec(key.getBytes("UTF-8"));
-            SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("DES");
-            SecretKey securekey = keyFactory.generateSecret(desKey);
-            // 用密匙初始化Cipher对象
-            cipher.init(Cipher.DECRYPT_MODE, securekey);
-            // 真正开始解密操作
-            byte[] original = cipher.doFinal(encrypted1);
-            String originalString = new String(original);
-            return originalString;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
+        byte[] encrypted1 = Base64.getDecoder().decode(data);
+        // Cipher对象实际完成解密操作
+        Cipher cipher = Cipher.getInstance("DES");
+        // 转换成SecretKey对象
+        DESKeySpec desKey = new DESKeySpec(key.getBytes("UTF-8"));
+        SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("DES");
+        SecretKey securekey = keyFactory.generateSecret(desKey);
+        // 用密匙初始化Cipher对象
+        cipher.init(Cipher.DECRYPT_MODE, securekey);
+        // 真正开始解密操作
+        byte[] original = cipher.doFinal(encrypted1);
+        String originalString = new String(original);
+        return originalString;
     }
 
     public static void main(String [] args) throws Exception {
-        System.out.println(encrypt("18729990   11 0","xib5eii68fqy8lsu"));
+        System.out.println(encrypt("123456","yzzadmin"));//JPfxYvlEZKU=
         System.out.println(desEncrypt("ODBtr+gxJCTPLwkfkrZdNA==","xib5eii68fqy8lsu"));
     }
 }

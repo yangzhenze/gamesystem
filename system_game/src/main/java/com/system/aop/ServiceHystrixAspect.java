@@ -6,7 +6,10 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint;
 import org.springframework.context.annotation.Configuration;
+
+import java.lang.reflect.Method;
 
 /**
  * @author zzy
@@ -29,11 +32,6 @@ public class ServiceHystrixAspect {
 
     @Around("excudeService()")
     public Object doAround(ProceedingJoinPoint pjp) throws Throwable {
-
-        if(String.class == pjp.getSignature().getDeclaringType()){
-            return Ret.msgSetVal("服务器内部请求错误");
-        }
-
-        return pjp.proceed();
+        return Ret.msgSetVal("服务器内部请求错误");
     }
 }

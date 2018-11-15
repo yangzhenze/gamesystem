@@ -16,11 +16,11 @@ import java.beans.Encoder;
  * @author zzy
  * @Date 2018/8/16 上午11:58
  */
-@FeignClient(value = "systemAdmin",fallback = AdminServiceHystrix.class)
+@FeignClient(value = "system-admin",fallback = AdminServiceHystrix.class)
 public interface AdminService {
 
     @RequestMapping(value = "/admin/login", method = RequestMethod.POST)
-    public Admin login(@RequestParam("account") String account,@RequestParam("password") String password);
+    Admin login(@RequestParam("account") String account,@RequestParam("password") String password);
 
     @PostMapping(value = "/admin", produces = "application/json;charset=UTF-8")
     String addAdmin(@RequestBody Admin admin);

@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function login(userInfo) {
   return request({
-    url: '/api/login',
+    url: '/auth/login',
     method: 'post',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8'

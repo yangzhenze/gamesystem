@@ -52,7 +52,7 @@ public class DictionaryController {
 
     @RequestMapping(value = "", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
     @ApiOperation(value = "添加字典",notes = "添加字典")
-    public String add(@RequestBody Dictionary dictionary){
+    public String add(Dictionary dictionary){
         if (null == dictionary.getDicParentId()) {
             if (null != dictionaryService.getByCode(dictionary.getDicCode(),null)) {
                 return Ret.msgSetVal(dictionary.getDicCode()+"已存在");
@@ -73,7 +73,7 @@ public class DictionaryController {
 
     @RequestMapping(value = "", method = RequestMethod.PUT, produces = "application/json;charset=UTF-8")
     @ApiOperation(value = "更新字典",notes = "更新字典")
-    public String update(@RequestBody Dictionary dictionary){
+    public String update(Dictionary dictionary){
         if (null == dictionary.getDicParentId()) {
             if(null != dictionaryService.getByCode(dictionary.getDicCode(),dictionary.getId())){
                 return Ret.msgSetVal(dictionary.getDicCode()+"已存在");

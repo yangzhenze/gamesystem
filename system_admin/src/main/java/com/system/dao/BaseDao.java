@@ -179,13 +179,11 @@ public class BaseDao<T> {
             sql.append(" INSERT INTO " + this.tableName);
             sql.append("(");
             for (int i = 0; fields != null && i < fields.length; i++) {
-
-
                 try {
                     // 暴力反射
                     fields[i].setAccessible(true);
                     //属性是否为空
-                    if(null != fields[i].get(entity)){
+                    if(null != fields[i].get(entity) && fields[i].isAnnotationPresent(Column.class)){
                         String column = fields[i].getAnnotation(Column.class).name();
                         sql.append(column).append(",");
                         valSql.append("?,");

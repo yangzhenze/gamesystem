@@ -1,5 +1,15 @@
 import request from '@/utils/request'
 
+// 文件上传
+export function upload(params) {
+  request.defaults.headers['Content-Type'] = 'multipart/form-data'
+  return request({
+    url: '/api/admin/upload',
+    method: 'post',
+    data: params
+  })
+}
+
 // 获取列表
 export function getList(page, params) {
   return request({
@@ -34,7 +44,7 @@ export function updateAdmin(params) {
 // 帐号验证
 export function checkAccount(params) {
   return request({
-    url: '/api/admin/checkAccount',
+    url: '/api/admin/check/account',
     method: 'post',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     data: params

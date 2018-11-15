@@ -1,6 +1,6 @@
 spring:
   application:
-    name: systemGame
+    name: system-game
   #resources:
     #static-locations: classpath:/static/,classpath:/META-INF/resources,file:/Users/yangzhenze/Downloads/
   #mvc:

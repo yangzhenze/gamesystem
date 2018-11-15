@@ -11,7 +11,7 @@ import java.util.List;
  * @author zzy
  * @Date 2018/8/17 下午1:38
  */
-@FeignClient(value = "systemAdmin", fallback = PermissionServiceHystrix.class)
+@FeignClient(value = "system-admin", fallback = PermissionServiceHystrix.class)
 public interface PermissionService {
 
     @RequestMapping(value = "/per", method = RequestMethod.POST)

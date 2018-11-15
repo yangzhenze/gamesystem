@@ -82,6 +82,7 @@ export default {
     column: {
       name: 'Name',
       path: 'Path',
+      method: 'Method',
       icon: 'Icon',
       actions: 'actions'
     },
@@ -96,7 +97,8 @@ export default {
     },
     role: {
       visitUrl: 'Please Input Path',
-      permissionName: 'Please Input Name'
+      permissionName: 'Please Input Name',
+      method: 'Please Choice Method',
     }
   },
   dictionary: {

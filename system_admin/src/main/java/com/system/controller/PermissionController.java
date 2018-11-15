@@ -29,7 +29,7 @@ public class PermissionController {
 
     @RequestMapping(value = "", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
     @ApiOperation(value = "添加权限接口",notes = "根据Permission对象创建权限")
-    public String addPermission(@RequestBody Permission permission){
+    public String addPermission(Permission permission){
         if(permissionService.save(permission)){
             return Ret.msgAdd();
         }
@@ -47,7 +47,7 @@ public class PermissionController {
     @RequestMapping(value = "", method = RequestMethod.PUT, produces = "application/json;charset=UTF-8")
     @ApiOperation(value = "更新权限接口",notes = "根据Permission对象更新权限,id必传")
     @ApiImplicitParam(name = "id",value = "主键",required = true,paramType = "query",dataType = "Integer")
-    public String updatePermission(@RequestBody Permission permission){
+    public String updatePermission(Permission permission){
         if(null == permission.getId()){
             return Ret.msgSetVal("id为必传参数");
         }

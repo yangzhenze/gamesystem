@@ -56,6 +56,14 @@ public class Permission implements Serializable{
     private String icon;
 
     /**
+     *访问方法
+     */
+    @Getter
+    @Setter
+    @Column(name="method")
+    private String method;
+
+    /**
      *排序
      */
     @Getter
